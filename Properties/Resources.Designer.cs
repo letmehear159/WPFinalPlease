@@ -63,9 +63,9 @@ namespace WPFinalPlease.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_account_480px {
+        internal static System.Drawing.Bitmap icons8_favorite_512px_4 {
             get {
-                object obj = ResourceManager.GetObject("icons8_account_480px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_favorite_512px_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,39 @@ namespace WPFinalPlease.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_account_480px1 {
+        internal static System.Drawing.Bitmap icons8_Favorite_512px1 {
             get {
-                object obj = ResourceManager.GetObject("icons8_account_480px1", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_Favorite_512px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_512px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_info_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_480px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

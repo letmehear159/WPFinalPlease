@@ -16,5 +16,20 @@ namespace WPFinalPlease
         {
             InitializeComponent();
         }
+
+        private void bunifuSeparator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
