@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucBriefPersonalInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBriefPersonalInfor.Designer.cs">
+      <DependentUpon>ucBriefPersonalInfor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucWorkerList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_account_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_account_480px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
