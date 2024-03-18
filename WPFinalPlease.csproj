@@ -46,6 +46,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
@@ -123,6 +127,12 @@
     <Compile Include="ucBriefPersonalInfor.Designer.cs">
       <DependentUpon>ucBriefPersonalInfor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCreateJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCreateJob.Designer.cs">
+      <DependentUpon>ucCreateJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucWorkerDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,6 +167,9 @@
     </Compile>
     <EmbeddedResource Include="ucBriefPersonalInfor.resx">
       <DependentUpon>ucBriefPersonalInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCreateJob.resx">
+      <DependentUpon>ucCreateJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorkerDetail.resx">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
@@ -218,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Back_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Dollar_Coin_480px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
