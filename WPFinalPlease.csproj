@@ -133,6 +133,12 @@
     <Compile Include="ucCreateJob.Designer.cs">
       <DependentUpon>ucCreateJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNotification.Designer.cs">
+      <DependentUpon>ucNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucWorkerDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCreateJob.resx">
       <DependentUpon>ucCreateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNotification.resx">
+      <DependentUpon>ucNotification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorkerDetail.resx">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
@@ -234,6 +243,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Dollar_Coin_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1507525428034-b723cf961d3e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-l1600.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

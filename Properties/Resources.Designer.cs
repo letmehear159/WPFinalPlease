@@ -129,5 +129,25 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_1507525428034_b723cf961d3e {
+            get {
+                object obj = ResourceManager.GetObject("photo-1507525428034-b723cf961d3e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap s_l1600 {
+            get {
+                object obj = ResourceManager.GetObject("s-l1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
