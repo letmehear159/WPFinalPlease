@@ -31,5 +31,10 @@ namespace WPFinalPlease
         {
 
         }
+
+        private void ucBriefPersonalInfor1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
