@@ -63,6 +63,16 @@ namespace WPFinalPlease.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap done_208px {
+            get {
+                object obj = ResourceManager.GetObject("done_208px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_account_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_account_480px", resourceCulture);
@@ -76,6 +86,36 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap icons8_account_480px1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_account_480px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jobs_gif {
+            get {
+                object obj = ResourceManager.GetObject("Jobs gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo {
+            get {
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Right_Arrow_512px {
+            get {
+                object obj = ResourceManager.GetObject("Right Arrow_512px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
