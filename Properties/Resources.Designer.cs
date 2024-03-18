@@ -68,101 +68,40 @@ namespace WPFinalPlease.Properties
                 resourceCulture = value;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Back_512px
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_Back_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Dollar_Coin_480px
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_Dollar_Coin_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_favorite_512px_4
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_favorite_512px_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -231,6 +170,77 @@ namespace WPFinalPlease.Properties
             get
             {
                 object obj = ResourceManager.GetObject("Right Arrow_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Favorite_512px1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_Favorite_512px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_512px
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_info_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_480px
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_search_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_480px_1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("icons8_search_480px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_1507525428034_b723cf961d3e
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("photo-1507525428034-b723cf961d3e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap s_l1600
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("s-l1600", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
