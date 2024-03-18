@@ -10,29 +10,24 @@ using System.Windows.Forms;
 
 namespace WPFinalPlease
 {
-    public partial class ucJobList : UserControl
+    public partial class fJobAdd : Form
     {
-        public ucJobList()
+        public fJobAdd()
         {
             InitializeComponent();
         }
 
-        private void bunifuButton3_Click(object sender, EventArgs e)
+        private void fJobAdd_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void bunifuLabel1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
         }
