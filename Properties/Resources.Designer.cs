@@ -63,6 +63,16 @@ namespace WPFinalPlease.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_512px {
+            get {
+                object obj = ResourceManager.GetObject("close_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap done_208px {
             get {
                 object obj = ResourceManager.GetObject("done_208px", resourceCulture);
@@ -174,9 +184,9 @@ namespace WPFinalPlease.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo {
+        internal static System.Drawing.Bitmap Left_Arrow_512px {
             get {
-                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                object obj = ResourceManager.GetObject("Left Arrow_512px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

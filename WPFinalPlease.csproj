@@ -238,9 +238,6 @@
     <None Include="Resources\Jobs gif.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\done_208px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -285,6 +282,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\s-l1600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left Arrow_512px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
