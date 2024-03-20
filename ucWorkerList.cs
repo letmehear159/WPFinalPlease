@@ -16,6 +16,7 @@ namespace WPFinalPlease
         SqlConnection conn = new
  SqlConnection(Properties.Settings.Default.connStr);
         DBconnection dBconnection = new DBconnection();
+        WorkerDao workerDao = new WorkerDao();
         public ucWorkerList()
         {
             InitializeComponent();
@@ -25,16 +26,9 @@ namespace WPFinalPlease
 
         private void ucWorkerList_Load(object sender, EventArgs e)
         {
-            string sqlStr = string.Format("SELECT *FROM {0}", "Worker");
-            DataTable workerList = dBconnection.load(sqlStr);
+            DataTable workerList = workerDao.load();
             DataRow frow = workerList.Rows[0];
-            ucBriefPerson1.lblAddress.Text = frow["Address"].ToString();
-            ucBriefPerson1.lblBio.Text = frow["bio"].ToString();
-            ucBriefPerson1.lblExpectedPrice.Text = frow["Expected_Price"].ToString();
-            ucBriefPerson1.lblOccupation.Text = frow["occupation"].ToString();
-            ucBriefPerson1.lblSkill.Text = frow["skills"].ToString();
-            ucBriefPerson1.lblExperienceYear.Text = frow["Experience_Year"].ToString();
-            ucBriefPerson1.lblStar.Text = frow["Star_rate"].ToString();
+            ucBriefPerson1.receiveInfor(frow);
         }
     }
 }

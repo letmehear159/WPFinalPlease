@@ -184,6 +184,7 @@
       <DependentUpon>ucWorkHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="Worker.cs" />
+    <Compile Include="WorkerDao.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
