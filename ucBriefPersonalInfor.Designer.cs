@@ -33,21 +33,21 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblStar = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblAddress = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblExpectedPrice = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblExperienceYear = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblOccupation = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel14 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblSkill = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblBio = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -63,32 +63,32 @@
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuLabel1
+            // lblName
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(34, 92);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel1.TabIndex = 3;
-            this.bunifuLabel1.Text = "Name";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblName.AllowParentOverrides = false;
+            this.lblName.AutoEllipsis = false;
+            this.lblName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblName.Location = new System.Drawing.Point(34, 92);
+            this.lblName.Name = "lblName";
+            this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblName.Size = new System.Drawing.Size(32, 15);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Name";
+            this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.90221F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.09779F));
-            this.tableLayoutPanel1.Controls.Add(this.bunifuLabel11, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.bunifuLabel10, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bunifuLabel9, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.bunifuLabel8, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bunifuLabel7, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblStar, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblAddress, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblExpectedPrice, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblExperienceYear, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblOccupation, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.bunifuLabel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.bunifuLabel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bunifuLabel4, 0, 2);
@@ -105,85 +105,85 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(317, 132);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // bunifuLabel11
+            // lblStar
             // 
-            this.bunifuLabel11.AllowParentOverrides = false;
-            this.bunifuLabel11.AutoEllipsis = false;
-            this.bunifuLabel11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel11.Location = new System.Drawing.Point(139, 107);
-            this.bunifuLabel11.Name = "bunifuLabel11";
-            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel11.TabIndex = 15;
-            this.bunifuLabel11.Text = "Name";
-            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblStar.AllowParentOverrides = false;
+            this.lblStar.AutoEllipsis = false;
+            this.lblStar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblStar.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblStar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblStar.Location = new System.Drawing.Point(139, 107);
+            this.lblStar.Name = "lblStar";
+            this.lblStar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblStar.Size = new System.Drawing.Size(32, 15);
+            this.lblStar.TabIndex = 15;
+            this.lblStar.Text = "Name";
+            this.lblStar.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblStar.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel10
+            // lblAddress
             // 
-            this.bunifuLabel10.AllowParentOverrides = false;
-            this.bunifuLabel10.AutoEllipsis = false;
-            this.bunifuLabel10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel10.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel10.Location = new System.Drawing.Point(139, 81);
-            this.bunifuLabel10.Name = "bunifuLabel10";
-            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel10.TabIndex = 14;
-            this.bunifuLabel10.Text = "Name";
-            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblAddress.AllowParentOverrides = false;
+            this.lblAddress.AutoEllipsis = false;
+            this.lblAddress.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblAddress.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAddress.Location = new System.Drawing.Point(139, 81);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblAddress.Size = new System.Drawing.Size(32, 15);
+            this.lblAddress.TabIndex = 14;
+            this.lblAddress.Text = "Name";
+            this.lblAddress.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblAddress.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel9
+            // lblExpectedPrice
             // 
-            this.bunifuLabel9.AllowParentOverrides = false;
-            this.bunifuLabel9.AutoEllipsis = false;
-            this.bunifuLabel9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel9.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel9.Location = new System.Drawing.Point(139, 55);
-            this.bunifuLabel9.Name = "bunifuLabel9";
-            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel9.TabIndex = 13;
-            this.bunifuLabel9.Text = "Name";
-            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblExpectedPrice.AllowParentOverrides = false;
+            this.lblExpectedPrice.AutoEllipsis = false;
+            this.lblExpectedPrice.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblExpectedPrice.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblExpectedPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblExpectedPrice.Location = new System.Drawing.Point(139, 55);
+            this.lblExpectedPrice.Name = "lblExpectedPrice";
+            this.lblExpectedPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblExpectedPrice.Size = new System.Drawing.Size(32, 15);
+            this.lblExpectedPrice.TabIndex = 13;
+            this.lblExpectedPrice.Text = "Name";
+            this.lblExpectedPrice.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblExpectedPrice.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel8
+            // lblExperienceYear
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(139, 29);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel8.TabIndex = 12;
-            this.bunifuLabel8.Text = "Name";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblExperienceYear.AllowParentOverrides = false;
+            this.lblExperienceYear.AutoEllipsis = false;
+            this.lblExperienceYear.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblExperienceYear.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblExperienceYear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblExperienceYear.Location = new System.Drawing.Point(139, 29);
+            this.lblExperienceYear.Name = "lblExperienceYear";
+            this.lblExperienceYear.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblExperienceYear.Size = new System.Drawing.Size(32, 15);
+            this.lblExperienceYear.TabIndex = 12;
+            this.lblExperienceYear.Text = "Name";
+            this.lblExperienceYear.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblExperienceYear.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel7
+            // lblOccupation
             // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel7.Location = new System.Drawing.Point(139, 3);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel7.TabIndex = 11;
-            this.bunifuLabel7.Text = "Name";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblOccupation.AllowParentOverrides = false;
+            this.lblOccupation.AutoEllipsis = false;
+            this.lblOccupation.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblOccupation.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblOccupation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblOccupation.Location = new System.Drawing.Point(139, 3);
+            this.lblOccupation.Name = "lblOccupation";
+            this.lblOccupation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblOccupation.Size = new System.Drawing.Size(32, 15);
+            this.lblOccupation.TabIndex = 11;
+            this.lblOccupation.Text = "Name";
+            this.lblOccupation.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblOccupation.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
@@ -281,37 +281,37 @@
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel13
+            // lblSkill
             // 
-            this.bunifuLabel13.AllowParentOverrides = false;
-            this.bunifuLabel13.AutoEllipsis = false;
-            this.bunifuLabel13.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel13.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel13.Location = new System.Drawing.Point(39, 158);
-            this.bunifuLabel13.Name = "bunifuLabel13";
-            this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel13.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel13.TabIndex = 12;
-            this.bunifuLabel13.Text = "Name";
-            this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblSkill.AllowParentOverrides = false;
+            this.lblSkill.AutoEllipsis = false;
+            this.lblSkill.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblSkill.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblSkill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSkill.Location = new System.Drawing.Point(39, 158);
+            this.lblSkill.Name = "lblSkill";
+            this.lblSkill.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblSkill.Size = new System.Drawing.Size(32, 15);
+            this.lblSkill.TabIndex = 12;
+            this.lblSkill.Text = "Name";
+            this.lblSkill.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblSkill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel14
+            // lblBio
             // 
-            this.bunifuLabel14.AllowParentOverrides = false;
-            this.bunifuLabel14.AutoEllipsis = false;
-            this.bunifuLabel14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel14.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel14.Location = new System.Drawing.Point(39, 200);
-            this.bunifuLabel14.Name = "bunifuLabel14";
-            this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(32, 15);
-            this.bunifuLabel14.TabIndex = 14;
-            this.bunifuLabel14.Text = "Name";
-            this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblBio.AllowParentOverrides = false;
+            this.lblBio.AutoEllipsis = false;
+            this.lblBio.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblBio.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblBio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblBio.Location = new System.Drawing.Point(39, 200);
+            this.lblBio.Name = "lblBio";
+            this.lblBio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBio.Size = new System.Drawing.Size(32, 15);
+            this.lblBio.TabIndex = 14;
+            this.lblBio.Text = "Name";
+            this.lblBio.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblBio.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel15
             // 
@@ -561,13 +561,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.bunifuButton2);
-            this.Controls.Add(this.bunifuLabel14);
+            this.Controls.Add(this.lblBio);
             this.Controls.Add(this.bunifuLabel15);
-            this.Controls.Add(this.bunifuLabel13);
+            this.Controls.Add(this.lblSkill);
             this.Controls.Add(this.bunifuLabel12);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.bunifuSeparator2);
-            this.Controls.Add(this.bunifuLabel1);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Name = "ucBriefPersonalInfor";
@@ -585,24 +585,24 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel lblName;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel14;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        public Bunifu.UI.WinForms.BunifuLabel lblStar;
+        public Bunifu.UI.WinForms.BunifuLabel lblAddress;
+        public Bunifu.UI.WinForms.BunifuLabel lblExpectedPrice;
+        public Bunifu.UI.WinForms.BunifuLabel lblExperienceYear;
+        public Bunifu.UI.WinForms.BunifuLabel lblOccupation;
+        public Bunifu.UI.WinForms.BunifuLabel lblBio;
+        public Bunifu.UI.WinForms.BunifuLabel lblSkill;
     }
 }
