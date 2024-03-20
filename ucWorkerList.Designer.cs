@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucWorkerList));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -47,10 +47,10 @@
             this.bunifuCheckBox3 = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuCheckBox2 = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuCheckBox1 = new Bunifu.UI.WinForms.BunifuCheckBox();
-            this.ucBriefPersonalInfor4 = new WPFinalPlease.ucBriefPersonalInfor();
-            this.ucBriefPersonalInfor3 = new WPFinalPlease.ucBriefPersonalInfor();
-            this.ucBriefPersonalInfor2 = new WPFinalPlease.ucBriefPersonalInfor();
-            this.ucBriefPersonalInfor1 = new WPFinalPlease.ucBriefPersonalInfor();
+            this.ucBriefPerson4 = new WPFinalPlease.ucBriefPersonalInfor();
+            this.ucBriefPerson3 = new WPFinalPlease.ucBriefPersonalInfor();
+            this.ucBriefPerson2 = new WPFinalPlease.ucBriefPersonalInfor();
+            this.ucBriefPerson1 = new WPFinalPlease.ucBriefPersonalInfor();
             this.bunifuCards1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -228,10 +228,10 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Transparent;
-            this.bunifuCards1.Controls.Add(this.ucBriefPersonalInfor4);
-            this.bunifuCards1.Controls.Add(this.ucBriefPersonalInfor3);
-            this.bunifuCards1.Controls.Add(this.ucBriefPersonalInfor2);
-            this.bunifuCards1.Controls.Add(this.ucBriefPersonalInfor1);
+            this.bunifuCards1.Controls.Add(this.ucBriefPerson4);
+            this.bunifuCards1.Controls.Add(this.ucBriefPerson3);
+            this.bunifuCards1.Controls.Add(this.ucBriefPerson2);
+            this.bunifuCards1.Controls.Add(this.ucBriefPerson1);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(3, 104);
             this.bunifuCards1.Name = "bunifuCards1";
@@ -254,7 +254,6 @@
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(980, 14);
             this.bunifuSeparator1.TabIndex = 11;
-            this.bunifuSeparator1.Click += new System.EventHandler(this.bunifuSeparator1_Click);
             // 
             // bunifuTextBox1
             // 
@@ -290,26 +289,26 @@
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(160)))));
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(160)))));
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties8;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(160)))));
@@ -330,7 +329,6 @@
             this.bunifuTextBox1.TextPlaceholder = "Enter text";
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
-            this.bunifuTextBox1.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
             // 
             // bunifuButton2
             // 
@@ -351,11 +349,11 @@
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges2;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -420,7 +418,6 @@
             this.bunifuButton2.TextMarginLeft = 0;
             this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
             // bunifuCheckBox4
             // 
@@ -634,38 +631,37 @@
             this.bunifuCheckBox1.ThreeState = false;
             this.bunifuCheckBox1.ToolTipText = null;
             // 
-            // ucBriefPersonalInfor4
+            // ucBriefPerson4
             // 
-            this.ucBriefPersonalInfor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
-            this.ucBriefPersonalInfor4.Location = new System.Drawing.Point(457, 309);
-            this.ucBriefPersonalInfor4.Name = "ucBriefPersonalInfor4";
-            this.ucBriefPersonalInfor4.Size = new System.Drawing.Size(416, 274);
-            this.ucBriefPersonalInfor4.TabIndex = 4;
+            this.ucBriefPerson4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
+            this.ucBriefPerson4.Location = new System.Drawing.Point(457, 309);
+            this.ucBriefPerson4.Name = "ucBriefPerson4";
+            this.ucBriefPerson4.Size = new System.Drawing.Size(416, 274);
+            this.ucBriefPerson4.TabIndex = 4;
             // 
-            // ucBriefPersonalInfor3
+            // ucBriefPerson3
             // 
-            this.ucBriefPersonalInfor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
-            this.ucBriefPersonalInfor3.Location = new System.Drawing.Point(9, 309);
-            this.ucBriefPersonalInfor3.Name = "ucBriefPersonalInfor3";
-            this.ucBriefPersonalInfor3.Size = new System.Drawing.Size(416, 274);
-            this.ucBriefPersonalInfor3.TabIndex = 3;
+            this.ucBriefPerson3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
+            this.ucBriefPerson3.Location = new System.Drawing.Point(9, 309);
+            this.ucBriefPerson3.Name = "ucBriefPerson3";
+            this.ucBriefPerson3.Size = new System.Drawing.Size(416, 274);
+            this.ucBriefPerson3.TabIndex = 3;
             // 
-            // ucBriefPersonalInfor2
+            // ucBriefPerson2
             // 
-            this.ucBriefPersonalInfor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
-            this.ucBriefPersonalInfor2.Location = new System.Drawing.Point(457, 9);
-            this.ucBriefPersonalInfor2.Name = "ucBriefPersonalInfor2";
-            this.ucBriefPersonalInfor2.Size = new System.Drawing.Size(416, 274);
-            this.ucBriefPersonalInfor2.TabIndex = 2;
+            this.ucBriefPerson2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
+            this.ucBriefPerson2.Location = new System.Drawing.Point(457, 9);
+            this.ucBriefPerson2.Name = "ucBriefPerson2";
+            this.ucBriefPerson2.Size = new System.Drawing.Size(416, 274);
+            this.ucBriefPerson2.TabIndex = 2;
             // 
-            // ucBriefPersonalInfor1
+            // ucBriefPerson1
             // 
-            this.ucBriefPersonalInfor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
-            this.ucBriefPersonalInfor1.Location = new System.Drawing.Point(9, 9);
-            this.ucBriefPersonalInfor1.Name = "ucBriefPersonalInfor1";
-            this.ucBriefPersonalInfor1.Size = new System.Drawing.Size(416, 274);
-            this.ucBriefPersonalInfor1.TabIndex = 1;
-            this.ucBriefPersonalInfor1.Load += new System.EventHandler(this.ucBriefPersonalInfor1_Load);
+            this.ucBriefPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
+            this.ucBriefPerson1.Location = new System.Drawing.Point(9, 9);
+            this.ucBriefPerson1.Name = "ucBriefPerson1";
+            this.ucBriefPerson1.Size = new System.Drawing.Size(416, 274);
+            this.ucBriefPerson1.TabIndex = 1;
             // 
             // ucWorkerList
             // 
@@ -685,6 +681,7 @@
             this.Controls.Add(this.bunifuDropdown1);
             this.Name = "ucWorkerList";
             this.Size = new System.Drawing.Size(980, 800);
+            this.Load += new System.EventHandler(this.ucWorkerList_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -705,9 +702,9 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private ucBriefPersonalInfor ucBriefPersonalInfor2;
-        private ucBriefPersonalInfor ucBriefPersonalInfor1;
-        private ucBriefPersonalInfor ucBriefPersonalInfor4;
-        private ucBriefPersonalInfor ucBriefPersonalInfor3;
+        private ucBriefPersonalInfor ucBriefPerson4;
+        private ucBriefPersonalInfor ucBriefPerson3;
+        private ucBriefPersonalInfor ucBriefPerson2;
+        private ucBriefPersonalInfor ucBriefPerson1;
     }
 }
