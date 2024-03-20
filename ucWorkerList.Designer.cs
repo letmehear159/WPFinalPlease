@@ -260,7 +260,7 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Transparent;
-            this.bunifuCards1.Controls.Add(this.ucBriefPerson4);
+            this.bunifuCards1.Controls.Add(this.ucBriefPerson4)
             this.bunifuCards1.Controls.Add(this.ucBriefPerson3);
             this.bunifuCards1.Controls.Add(this.ucBriefPerson2);
             this.bunifuCards1.Controls.Add(this.ucBriefPerson1);
