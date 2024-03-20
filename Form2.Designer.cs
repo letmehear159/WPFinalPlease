@@ -1,6 +1,6 @@
 ﻿namespace WPFinalPlease
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucWorkerList1 = new WPFinalPlease.ucWorkerList();
             this.SuspendLayout();
             // 
-            // Form1
+            // ucWorkerList1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ucWorkerList1.Location = new System.Drawing.Point(0, 0);
+            this.ucWorkerList1.Name = "ucWorkerList1";
+            this.ucWorkerList1.Size = new System.Drawing.Size(980, 800);
+            this.ucWorkerList1.TabIndex = 0;
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(964, 761);
+            this.Controls.Add(this.ucWorkerList1);
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private ucWorkerList ucWorkerList1;
     }
 }
-
