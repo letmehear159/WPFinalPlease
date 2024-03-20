@@ -27,8 +27,16 @@ namespace WPFinalPlease
         private void ucWorkerList_Load(object sender, EventArgs e)
         {
             DataTable workerList = workerDao.load();
-            DataRow frow = workerList.Rows[0];
-            ucBriefPerson1.receiveInfor(frow);
+            foreach (DataRow row in workerList.Rows)
+            {
+                ucBriefPersonalInfor ucBriefPersonalInfor = new ucBriefPersonalInfor();
+                ucBriefPersonalInfor.receiveInfor(row);
+                ucBriefPersonalInfor.Margin = new Padding(15);
+                flowPanel.Controls.Add(ucBriefPersonalInfor);
+            }
+
         }
+
+
     }
 }
