@@ -58,6 +58,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
@@ -107,6 +111,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -120,6 +125,18 @@
   <ItemGroup>
     <Compile Include="Utility.cs" />
     <Compile Include="DBconnection.cs" />
+     <Compile Include="fJobAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fJobAdd.Designer.cs">
+      <DependentUpon>fJobAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fJobInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fJobInfo.Designer.cs">
+      <DependentUpon>fJobInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +188,24 @@
     </Compile>
     <Compile Include="ucWorkerDetail.Designer.cs">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
+</Compile>
+       <Compile Include="ucJobCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucJobCard.Designer.cs">
+      <DependentUpon>ucJobCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucJobList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucJobList.Designer.cs">
+      <DependentUpon>ucJobList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMainMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMainMenu.Designer.cs">
+      <DependentUpon>ucMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="ucWorkerList.cs">
       <SubType>UserControl</SubType>
@@ -186,6 +221,12 @@
     </Compile>
     <Compile Include="Worker.cs" />
     <Compile Include="WorkerDao.cs" />
+    <EmbeddedResource Include="fJobAdd.resx">
+      <DependentUpon>fJobAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fJobInfo.resx">
+      <DependentUpon>fJobInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +261,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorkerDetail.resx">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+     <EmbeddedResource Include="ucJobCard.resx">
+      <DependentUpon>ucJobCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucJobList.resx">
+      <DependentUpon>ucJobList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMainMenu.resx">
+      <DependentUpon>ucMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorkerList.resx">
       <DependentUpon>ucWorkerList.cs</DependentUpon>
@@ -300,6 +350,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Left Arrow_512px.png" />
+     <None Include="Resources\icons8-sun-96.png" />
+    <None Include="Resources\icons8-dark-mode-1001.png" />
+    <None Include="Resources\icons8-moon-1001.png" />
+    <None Include="Resources\icons8-search-100.png" />
+    <None Include="Resources\icons8-plus-100.png" />
+    <None Include="Resources\icons8-refresh-90.png" />
+    <None Include="Resources\icons8-close-window-100.png" />
+    <None Include="Resources\icons8-edit-property-96.png" />
+    <None Include="Resources\icons8-tick-100.png" />
+    <None Include="Resources\icons8-eyes-64.png" />
+    <None Include="Resources\icons8-logout-96.png" />
+    <Content Include="Resources\icons8-power-off-button-100.png" />
+    <Content Include="Resources\icons8_account_480px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
