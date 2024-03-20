@@ -109,6 +109,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_close_window_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -116,6 +122,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap icons8_Dollar_Coin_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Dollar_Coin_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_dark_mode_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-dark-mode-1001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -129,6 +141,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_edit_property_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-property-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -136,6 +154,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap icons8_Favorite_512px1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_Favorite_512px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_eyes_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eyes-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -149,6 +173,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_logout_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -156,6 +186,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap icons8_search_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_search_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_moon_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-moon-1001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -169,6 +205,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_plus_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -176,6 +218,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap Jobs_gif {
             get {
                 object obj = ResourceManager.GetObject("Jobs gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_power_off_button_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-power-off-button-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -189,6 +237,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_refresh_90 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-refresh-90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -196,6 +250,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap photo_1507525428034_b723cf961d3e {
             get {
                 object obj = ResourceManager.GetObject("photo-1507525428034-b723cf961d3e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_search_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -209,6 +269,12 @@ namespace WPFinalPlease.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap icons8_sun_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sun-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -216,6 +282,12 @@ namespace WPFinalPlease.Properties {
         internal static System.Drawing.Bitmap s_l1600 {
             get {
                 object obj = ResourceManager.GetObject("s-l1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap icons8_tick_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tick-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
