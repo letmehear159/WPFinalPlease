@@ -128,6 +128,8 @@
             this.lblFinishFP = new Bunifu.UI.WinForms.BunifuLabel();
             this.ptbImageFP3 = new System.Windows.Forms.PictureBox();
             this.elipseLogin = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuCheckBox1 = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
             this.tabctrlLogin.SuspendLayout();
             this.tabpgLogin.SuspendLayout();
             this.pnBorderLG.SuspendLayout();
@@ -157,7 +159,7 @@
             this.tabctrlLogin.Controls.Add(this.tabpgFP2);
             this.tabctrlLogin.Controls.Add(this.tabpgFP3);
             this.tabctrlLogin.Location = new System.Drawing.Point(-6, -7);
-            this.tabctrlLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabctrlLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tabctrlLogin.Name = "tabctrlLogin";
             this.tabctrlLogin.SelectedIndex = 0;
             this.tabctrlLogin.Size = new System.Drawing.Size(831, 475);
@@ -167,7 +169,6 @@
             // 
             this.tabpgLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.tabpgLogin.Controls.Add(this.btnClose);
-            this.tabpgLogin.Controls.Add(this.linkFP);
             this.tabpgLogin.Controls.Add(this.btnSignupLG);
             this.tabpgLogin.Controls.Add(this.btnLogin);
             this.tabpgLogin.Controls.Add(this.txtPasswordLG);
@@ -175,7 +176,7 @@
             this.tabpgLogin.Controls.Add(this.pnBorderLG);
             this.tabpgLogin.Controls.Add(this.ptbImageLG);
             this.tabpgLogin.Location = new System.Drawing.Point(4, 4);
-            this.tabpgLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgLogin.Name = "tabpgLogin";
             this.tabpgLogin.Size = new System.Drawing.Size(823, 449);
             this.tabpgLogin.TabIndex = 2;
@@ -229,7 +230,7 @@
             this.btnClose.IdleIconRightImage = null;
             this.btnClose.IndicateFocus = false;
             this.btnClose.Location = new System.Drawing.Point(782, 2);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnClose.OnDisabledState.BorderRadius = 20;
@@ -278,7 +279,7 @@
             this.linkFP.BackColor = System.Drawing.Color.White;
             this.linkFP.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.linkFP.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkFP.Location = new System.Drawing.Point(140, 269);
+            this.linkFP.Location = new System.Drawing.Point(87, 217);
             this.linkFP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkFP.Name = "linkFP";
             this.linkFP.Size = new System.Drawing.Size(110, 16);
@@ -335,7 +336,7 @@
             this.btnSignupLG.IdleIconRightImage = null;
             this.btnSignupLG.IndicateFocus = false;
             this.btnSignupLG.Location = new System.Drawing.Point(105, 325);
-            this.btnSignupLG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignupLG.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignupLG.Name = "btnSignupLG";
             this.btnSignupLG.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSignupLG.OnDisabledState.BorderRadius = 10;
@@ -425,7 +426,7 @@
             this.btnLogin.IdleIconRightImage = null;
             this.btnLogin.IndicateFocus = false;
             this.btnLogin.Location = new System.Drawing.Point(68, 208);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogin.OnDisabledState.BorderRadius = 10;
@@ -496,7 +497,7 @@
             this.txtPasswordLG.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPasswordLG.Lines = new string[0];
             this.txtPasswordLG.Location = new System.Drawing.Point(68, 145);
-            this.txtPasswordLG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordLG.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasswordLG.MaxLength = 32767;
             this.txtPasswordLG.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPasswordLG.Modified = false;
@@ -522,7 +523,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPasswordLG.OnIdleState = stateProperties4;
-            this.txtPasswordLG.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordLG.Padding = new System.Windows.Forms.Padding(2);
             this.txtPasswordLG.PasswordChar = '\0';
             this.txtPasswordLG.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtPasswordLG.PlaceholderText = "Password";
@@ -572,7 +573,7 @@
             this.txtUsernameLG.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsernameLG.Lines = new string[0];
             this.txtUsernameLG.Location = new System.Drawing.Point(68, 83);
-            this.txtUsernameLG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameLG.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsernameLG.MaxLength = 32767;
             this.txtUsernameLG.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsernameLG.Modified = false;
@@ -598,7 +599,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUsernameLG.OnIdleState = stateProperties8;
-            this.txtUsernameLG.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameLG.Padding = new System.Windows.Forms.Padding(2);
             this.txtUsernameLG.PasswordChar = '\0';
             this.txtUsernameLG.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtUsernameLG.PlaceholderText = "Username";
@@ -625,11 +626,14 @@
             this.pnBorderLG.BorderColor = System.Drawing.Color.Black;
             this.pnBorderLG.BorderRadius = 20;
             this.pnBorderLG.BorderThickness = 1;
+            this.pnBorderLG.Controls.Add(this.bunifuLabel20);
+            this.pnBorderLG.Controls.Add(this.bunifuCheckBox1);
+            this.pnBorderLG.Controls.Add(this.linkFP);
             this.pnBorderLG.Controls.Add(this.sprtLine);
             this.pnBorderLG.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnBorderLG.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnBorderLG.Location = new System.Drawing.Point(52, 61);
-            this.pnBorderLG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBorderLG.Margin = new System.Windows.Forms.Padding(2);
             this.pnBorderLG.Name = "pnBorderLG";
             this.pnBorderLG.PanelColor = System.Drawing.Color.White;
             this.pnBorderLG.PanelColor2 = System.Drawing.Color.White;
@@ -661,7 +665,7 @@
             // 
             this.ptbImageLG.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageLG.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageLG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageLG.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageLG.Name = "ptbImageLG";
             this.ptbImageLG.Size = new System.Drawing.Size(450, 449);
             this.ptbImageLG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -679,9 +683,9 @@
             this.tabpgSignup1.Controls.Add(this.ptbImageSU1);
             this.tabpgSignup1.Controls.Add(this.pbBorderSU1);
             this.tabpgSignup1.Location = new System.Drawing.Point(4, 4);
-            this.tabpgSignup1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgSignup1.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgSignup1.Name = "tabpgSignup1";
-            this.tabpgSignup1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgSignup1.Padding = new System.Windows.Forms.Padding(2);
             this.tabpgSignup1.Size = new System.Drawing.Size(823, 449);
             this.tabpgSignup1.TabIndex = 1;
             this.tabpgSignup1.Text = "tabPage2";
@@ -734,7 +738,7 @@
             this.btnBackSU.IdleIconRightImage = null;
             this.btnBackSU.IndicateFocus = false;
             this.btnBackSU.Location = new System.Drawing.Point(2, 2);
-            this.btnBackSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBackSU.Margin = new System.Windows.Forms.Padding(2);
             this.btnBackSU.Name = "btnBackSU";
             this.btnBackSU.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBackSU.OnDisabledState.BorderRadius = 20;
@@ -805,7 +809,7 @@
             this.txtEmailSU.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmailSU.Lines = new string[0];
             this.txtEmailSU.Location = new System.Drawing.Point(68, 264);
-            this.txtEmailSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailSU.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailSU.MaxLength = 32767;
             this.txtEmailSU.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmailSU.Modified = false;
@@ -831,7 +835,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEmailSU.OnIdleState = stateProperties12;
-            this.txtEmailSU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailSU.Padding = new System.Windows.Forms.Padding(2);
             this.txtEmailSU.PasswordChar = '\0';
             this.txtEmailSU.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtEmailSU.PlaceholderText = "Email";
@@ -881,7 +885,7 @@
             this.txtCfPasswordSU.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCfPasswordSU.Lines = new string[0];
             this.txtCfPasswordSU.Location = new System.Drawing.Point(68, 203);
-            this.txtCfPasswordSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCfPasswordSU.Margin = new System.Windows.Forms.Padding(2);
             this.txtCfPasswordSU.MaxLength = 32767;
             this.txtCfPasswordSU.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCfPasswordSU.Modified = false;
@@ -907,7 +911,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCfPasswordSU.OnIdleState = stateProperties16;
-            this.txtCfPasswordSU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCfPasswordSU.Padding = new System.Windows.Forms.Padding(2);
             this.txtCfPasswordSU.PasswordChar = '\0';
             this.txtCfPasswordSU.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtCfPasswordSU.PlaceholderText = "Confirm password";
@@ -957,7 +961,7 @@
             this.txtPasswordSU.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPasswordSU.Lines = new string[0];
             this.txtPasswordSU.Location = new System.Drawing.Point(68, 142);
-            this.txtPasswordSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordSU.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasswordSU.MaxLength = 32767;
             this.txtPasswordSU.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPasswordSU.Modified = false;
@@ -983,7 +987,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPasswordSU.OnIdleState = stateProperties20;
-            this.txtPasswordSU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordSU.Padding = new System.Windows.Forms.Padding(2);
             this.txtPasswordSU.PasswordChar = '\0';
             this.txtPasswordSU.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtPasswordSU.PlaceholderText = "Password";
@@ -1033,7 +1037,7 @@
             this.txtUsernameSU.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsernameSU.Lines = new string[0];
             this.txtUsernameSU.Location = new System.Drawing.Point(68, 81);
-            this.txtUsernameSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameSU.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsernameSU.MaxLength = 32767;
             this.txtUsernameSU.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsernameSU.Modified = false;
@@ -1059,7 +1063,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUsernameSU.OnIdleState = stateProperties24;
-            this.txtUsernameSU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameSU.Padding = new System.Windows.Forms.Padding(2);
             this.txtUsernameSU.PasswordChar = '\0';
             this.txtUsernameSU.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtUsernameSU.PlaceholderText = "Username";
@@ -1084,7 +1088,7 @@
             // 
             this.ptbImageSU1.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageSU1.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageSU1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageSU1.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageSU1.Name = "ptbImageSU1";
             this.ptbImageSU1.Size = new System.Drawing.Size(450, 449);
             this.ptbImageSU1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1101,7 +1105,7 @@
             this.pbBorderSU1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pbBorderSU1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pbBorderSU1.Location = new System.Drawing.Point(52, 61);
-            this.pbBorderSU1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBorderSU1.Margin = new System.Windows.Forms.Padding(2);
             this.pbBorderSU1.Name = "pbBorderSU1";
             this.pbBorderSU1.PanelColor = System.Drawing.Color.White;
             this.pbBorderSU1.PanelColor2 = System.Drawing.Color.White;
@@ -1162,7 +1166,7 @@
             this.btnSignupSU.IdleIconRightImage = null;
             this.btnSignupSU.IndicateFocus = false;
             this.btnSignupSU.Location = new System.Drawing.Point(52, 264);
-            this.btnSignupSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignupSU.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignupSU.Name = "btnSignupSU";
             this.btnSignupSU.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSignupSU.OnDisabledState.BorderRadius = 10;
@@ -1211,7 +1215,7 @@
             this.tabpgSignup2.Controls.Add(this.pnBorderSU2);
             this.tabpgSignup2.Controls.Add(this.ptbImageSU2);
             this.tabpgSignup2.Location = new System.Drawing.Point(4, 4);
-            this.tabpgSignup2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgSignup2.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgSignup2.Name = "tabpgSignup2";
             this.tabpgSignup2.Size = new System.Drawing.Size(823, 449);
             this.tabpgSignup2.TabIndex = 6;
@@ -1265,7 +1269,7 @@
             this.btnFinishSU.IdleIconRightImage = null;
             this.btnFinishSU.IndicateFocus = false;
             this.btnFinishSU.Location = new System.Drawing.Point(165, 280);
-            this.btnFinishSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFinishSU.Margin = new System.Windows.Forms.Padding(2);
             this.btnFinishSU.Name = "btnFinishSU";
             this.btnFinishSU.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFinishSU.OnDisabledState.BorderRadius = 10;
@@ -1317,7 +1321,7 @@
             this.pnBorderSU2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnBorderSU2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnBorderSU2.Location = new System.Drawing.Point(52, 114);
-            this.pnBorderSU2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBorderSU2.Margin = new System.Windows.Forms.Padding(2);
             this.pnBorderSU2.Name = "pnBorderSU2";
             this.pnBorderSU2.PanelColor = System.Drawing.Color.White;
             this.pnBorderSU2.PanelColor2 = System.Drawing.Color.White;
@@ -1338,7 +1342,7 @@
             this.lblFinishSU.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblFinishSU.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.lblFinishSU.Location = new System.Drawing.Point(20, 53);
-            this.lblFinishSU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblFinishSU.Margin = new System.Windows.Forms.Padding(2);
             this.lblFinishSU.Name = "lblFinishSU";
             this.lblFinishSU.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFinishSU.Size = new System.Drawing.Size(233, 57);
@@ -1352,7 +1356,7 @@
             // 
             this.ptbImageSU2.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageSU2.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageSU2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageSU2.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageSU2.Name = "ptbImageSU2";
             this.ptbImageSU2.Size = new System.Drawing.Size(450, 449);
             this.ptbImageSU2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1370,7 +1374,7 @@
             this.tabpgFP1.Controls.Add(this.btnNextFP1);
             this.tabpgFP1.Controls.Add(this.ptbImageFP1);
             this.tabpgFP1.Location = new System.Drawing.Point(4, 4);
-            this.tabpgFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgFP1.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgFP1.Name = "tabpgFP1";
             this.tabpgFP1.Size = new System.Drawing.Size(823, 449);
             this.tabpgFP1.TabIndex = 3;
@@ -1424,7 +1428,7 @@
             this.btnBackFP1.IdleIconRightImage = null;
             this.btnBackFP1.IndicateFocus = false;
             this.btnBackFP1.Location = new System.Drawing.Point(2, 2);
-            this.btnBackFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBackFP1.Margin = new System.Windows.Forms.Padding(2);
             this.btnBackFP1.Name = "btnBackFP1";
             this.btnBackFP1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBackFP1.OnDisabledState.BorderRadius = 20;
@@ -1475,7 +1479,7 @@
             this.lblFP1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblFP1.ForeColor = System.Drawing.Color.Blue;
             this.lblFP1.Location = new System.Drawing.Point(124, 73);
-            this.lblFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblFP1.Margin = new System.Windows.Forms.Padding(2);
             this.lblFP1.Name = "lblFP1";
             this.lblFP1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFP1.Size = new System.Drawing.Size(129, 20);
@@ -1493,7 +1497,7 @@
             this.pnBorderFP1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnBorderFP1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnBorderFP1.Location = new System.Drawing.Point(52, 114);
-            this.pnBorderFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBorderFP1.Margin = new System.Windows.Forms.Padding(2);
             this.pnBorderFP1.Name = "pnBorderFP1";
             this.pnBorderFP1.PanelColor = System.Drawing.Color.White;
             this.pnBorderFP1.PanelColor2 = System.Drawing.Color.White;
@@ -1535,7 +1539,7 @@
             this.txtEmailFP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmailFP.Lines = new string[0];
             this.txtEmailFP.Location = new System.Drawing.Point(68, 211);
-            this.txtEmailFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailFP.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailFP.MaxLength = 32767;
             this.txtEmailFP.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmailFP.Modified = false;
@@ -1561,7 +1565,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEmailFP.OnIdleState = stateProperties28;
-            this.txtEmailFP.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailFP.Padding = new System.Windows.Forms.Padding(2);
             this.txtEmailFP.PasswordChar = '\0';
             this.txtEmailFP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtEmailFP.PlaceholderText = "Email";
@@ -1611,7 +1615,7 @@
             this.txtUsernameFP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsernameFP.Lines = new string[0];
             this.txtUsernameFP.Location = new System.Drawing.Point(68, 142);
-            this.txtUsernameFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameFP.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsernameFP.MaxLength = 32767;
             this.txtUsernameFP.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsernameFP.Modified = false;
@@ -1637,7 +1641,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Black;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUsernameFP.OnIdleState = stateProperties32;
-            this.txtUsernameFP.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsernameFP.Padding = new System.Windows.Forms.Padding(2);
             this.txtUsernameFP.PasswordChar = '\0';
             this.txtUsernameFP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtUsernameFP.PlaceholderText = "Username";
@@ -1706,7 +1710,7 @@
             this.btnNextFP1.IdleIconRightImage = null;
             this.btnNextFP1.IndicateFocus = false;
             this.btnNextFP1.Location = new System.Drawing.Point(165, 280);
-            this.btnNextFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNextFP1.Margin = new System.Windows.Forms.Padding(2);
             this.btnNextFP1.Name = "btnNextFP1";
             this.btnNextFP1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnNextFP1.OnDisabledState.BorderRadius = 10;
@@ -1752,7 +1756,7 @@
             // 
             this.ptbImageFP1.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageFP1.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageFP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageFP1.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageFP1.Name = "ptbImageFP1";
             this.ptbImageFP1.Size = new System.Drawing.Size(450, 449);
             this.ptbImageFP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1770,7 +1774,7 @@
             this.tabpgFP2.Controls.Add(this.btnNextFP2);
             this.tabpgFP2.Controls.Add(this.ptbImageFP2);
             this.tabpgFP2.Location = new System.Drawing.Point(4, 4);
-            this.tabpgFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgFP2.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgFP2.Name = "tabpgFP2";
             this.tabpgFP2.Size = new System.Drawing.Size(823, 449);
             this.tabpgFP2.TabIndex = 4;
@@ -1824,7 +1828,7 @@
             this.btnBackFP2.IdleIconRightImage = null;
             this.btnBackFP2.IndicateFocus = false;
             this.btnBackFP2.Location = new System.Drawing.Point(2, 2);
-            this.btnBackFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBackFP2.Margin = new System.Windows.Forms.Padding(2);
             this.btnBackFP2.Name = "btnBackFP2";
             this.btnBackFP2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBackFP2.OnDisabledState.BorderRadius = 20;
@@ -1874,7 +1878,7 @@
             this.lblFP2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblFP2.ForeColor = System.Drawing.Color.Blue;
             this.lblFP2.Location = new System.Drawing.Point(124, 73);
-            this.lblFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblFP2.Margin = new System.Windows.Forms.Padding(2);
             this.lblFP2.Name = "lblFP2";
             this.lblFP2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFP2.Size = new System.Drawing.Size(129, 20);
@@ -1892,7 +1896,7 @@
             this.pnBorderFP2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnBorderFP2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnBorderFP2.Location = new System.Drawing.Point(52, 114);
-            this.pnBorderFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBorderFP2.Margin = new System.Windows.Forms.Padding(2);
             this.pnBorderFP2.Name = "pnBorderFP2";
             this.pnBorderFP2.PanelColor = System.Drawing.Color.White;
             this.pnBorderFP2.PanelColor2 = System.Drawing.Color.White;
@@ -1934,7 +1938,7 @@
             this.txtCfPasswordFP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCfPasswordFP.Lines = new string[0];
             this.txtCfPasswordFP.Location = new System.Drawing.Point(68, 211);
-            this.txtCfPasswordFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCfPasswordFP.Margin = new System.Windows.Forms.Padding(2);
             this.txtCfPasswordFP.MaxLength = 32767;
             this.txtCfPasswordFP.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCfPasswordFP.Modified = false;
@@ -1960,7 +1964,7 @@
             stateProperties36.ForeColor = System.Drawing.Color.Black;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCfPasswordFP.OnIdleState = stateProperties36;
-            this.txtCfPasswordFP.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCfPasswordFP.Padding = new System.Windows.Forms.Padding(2);
             this.txtCfPasswordFP.PasswordChar = '\0';
             this.txtCfPasswordFP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtCfPasswordFP.PlaceholderText = "Confirm new password";
@@ -2010,7 +2014,7 @@
             this.txtPasswordFP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPasswordFP.Lines = new string[0];
             this.txtPasswordFP.Location = new System.Drawing.Point(68, 142);
-            this.txtPasswordFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordFP.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasswordFP.MaxLength = 32767;
             this.txtPasswordFP.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPasswordFP.Modified = false;
@@ -2036,7 +2040,7 @@
             stateProperties40.ForeColor = System.Drawing.Color.Black;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPasswordFP.OnIdleState = stateProperties40;
-            this.txtPasswordFP.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordFP.Padding = new System.Windows.Forms.Padding(2);
             this.txtPasswordFP.PasswordChar = '\0';
             this.txtPasswordFP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.txtPasswordFP.PlaceholderText = "New password";
@@ -2105,7 +2109,7 @@
             this.btnNextFP2.IdleIconRightImage = null;
             this.btnNextFP2.IndicateFocus = false;
             this.btnNextFP2.Location = new System.Drawing.Point(165, 280);
-            this.btnNextFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNextFP2.Margin = new System.Windows.Forms.Padding(2);
             this.btnNextFP2.Name = "btnNextFP2";
             this.btnNextFP2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnNextFP2.OnDisabledState.BorderRadius = 10;
@@ -2151,7 +2155,7 @@
             // 
             this.ptbImageFP2.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageFP2.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageFP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageFP2.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageFP2.Name = "ptbImageFP2";
             this.ptbImageFP2.Size = new System.Drawing.Size(450, 449);
             this.ptbImageFP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2165,7 +2169,7 @@
             this.tabpgFP3.Controls.Add(this.pnBorderFP3);
             this.tabpgFP3.Controls.Add(this.ptbImageFP3);
             this.tabpgFP3.Location = new System.Drawing.Point(4, 4);
-            this.tabpgFP3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabpgFP3.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgFP3.Name = "tabpgFP3";
             this.tabpgFP3.Size = new System.Drawing.Size(823, 449);
             this.tabpgFP3.TabIndex = 5;
@@ -2219,7 +2223,7 @@
             this.btnFinishFP.IdleIconRightImage = null;
             this.btnFinishFP.IndicateFocus = false;
             this.btnFinishFP.Location = new System.Drawing.Point(165, 280);
-            this.btnFinishFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFinishFP.Margin = new System.Windows.Forms.Padding(2);
             this.btnFinishFP.Name = "btnFinishFP";
             this.btnFinishFP.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFinishFP.OnDisabledState.BorderRadius = 10;
@@ -2271,7 +2275,7 @@
             this.pnBorderFP3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnBorderFP3.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnBorderFP3.Location = new System.Drawing.Point(52, 114);
-            this.pnBorderFP3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBorderFP3.Margin = new System.Windows.Forms.Padding(2);
             this.pnBorderFP3.Name = "pnBorderFP3";
             this.pnBorderFP3.PanelColor = System.Drawing.Color.White;
             this.pnBorderFP3.PanelColor2 = System.Drawing.Color.White;
@@ -2291,7 +2295,7 @@
             this.lblFinishFP.CursorType = null;
             this.lblFinishFP.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.lblFinishFP.Location = new System.Drawing.Point(35, 53);
-            this.lblFinishFP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblFinishFP.Margin = new System.Windows.Forms.Padding(2);
             this.lblFinishFP.Name = "lblFinishFP";
             this.lblFinishFP.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFinishFP.Size = new System.Drawing.Size(205, 57);
@@ -2305,7 +2309,7 @@
             // 
             this.ptbImageFP3.Image = global::WPFinalPlease.Properties.Resources.Jobs_gif;
             this.ptbImageFP3.Location = new System.Drawing.Point(375, 2);
-            this.ptbImageFP3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptbImageFP3.Margin = new System.Windows.Forms.Padding(2);
             this.ptbImageFP3.Name = "ptbImageFP3";
             this.ptbImageFP3.Size = new System.Drawing.Size(450, 449);
             this.ptbImageFP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2317,19 +2321,87 @@
             this.elipseLogin.ElipseRadius = 10;
             this.elipseLogin.TargetControl = this;
             // 
+            // bunifuCheckBox1
+            // 
+            this.bunifuCheckBox1.AllowBindingControlAnimation = true;
+            this.bunifuCheckBox1.AllowBindingControlColorChanges = false;
+            this.bunifuCheckBox1.AllowBindingControlLocation = true;
+            this.bunifuCheckBox1.AllowCheckBoxAnimation = false;
+            this.bunifuCheckBox1.AllowCheckmarkAnimation = true;
+            this.bunifuCheckBox1.AllowOnHoverStates = true;
+            this.bunifuCheckBox1.AutoCheck = true;
+            this.bunifuCheckBox1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCheckBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCheckBox1.BackgroundImage")));
+            this.bunifuCheckBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bunifuCheckBox1.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.bunifuCheckBox1.BorderRadius = 12;
+            this.bunifuCheckBox1.Checked = false;
+            this.bunifuCheckBox1.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.bunifuCheckBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuCheckBox1.CustomCheckmarkImage = null;
+            this.bunifuCheckBox1.Location = new System.Drawing.Point(16, 193);
+            this.bunifuCheckBox1.MinimumSize = new System.Drawing.Size(17, 17);
+            this.bunifuCheckBox1.Name = "bunifuCheckBox1";
+            this.bunifuCheckBox1.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuCheckBox1.OnCheck.BorderRadius = 12;
+            this.bunifuCheckBox1.OnCheck.BorderThickness = 2;
+            this.bunifuCheckBox1.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuCheckBox1.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.bunifuCheckBox1.OnCheck.CheckmarkThickness = 2;
+            this.bunifuCheckBox1.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuCheckBox1.OnDisable.BorderRadius = 12;
+            this.bunifuCheckBox1.OnDisable.BorderThickness = 2;
+            this.bunifuCheckBox1.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.bunifuCheckBox1.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.bunifuCheckBox1.OnDisable.CheckmarkThickness = 2;
+            this.bunifuCheckBox1.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuCheckBox1.OnHoverChecked.BorderRadius = 12;
+            this.bunifuCheckBox1.OnHoverChecked.BorderThickness = 2;
+            this.bunifuCheckBox1.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuCheckBox1.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.bunifuCheckBox1.OnHoverChecked.CheckmarkThickness = 2;
+            this.bunifuCheckBox1.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuCheckBox1.OnHoverUnchecked.BorderRadius = 12;
+            this.bunifuCheckBox1.OnHoverUnchecked.BorderThickness = 1;
+            this.bunifuCheckBox1.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.bunifuCheckBox1.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.bunifuCheckBox1.OnUncheck.BorderRadius = 12;
+            this.bunifuCheckBox1.OnUncheck.BorderThickness = 1;
+            this.bunifuCheckBox1.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.bunifuCheckBox1.Size = new System.Drawing.Size(21, 21);
+            this.bunifuCheckBox1.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.bunifuCheckBox1.TabIndex = 3;
+            this.bunifuCheckBox1.ThreeState = false;
+            this.bunifuCheckBox1.ToolTipText = null;
+            // 
+            // bunifuLabel20
+            // 
+            this.bunifuLabel20.AllowParentOverrides = false;
+            this.bunifuLabel20.AutoEllipsis = false;
+            this.bunifuLabel20.CursorType = null;
+            this.bunifuLabel20.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel20.Location = new System.Drawing.Point(43, 195);
+            this.bunifuLabel20.Name = "bunifuLabel20";
+            this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel20.Size = new System.Drawing.Size(113, 19);
+            this.bunifuLabel20.TabIndex = 39;
+            this.bunifuLabel20.Text = "Remember Me";
+            this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // ucLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.Controls.Add(this.tabctrlLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucLogin";
             this.Size = new System.Drawing.Size(825, 472);
             this.tabctrlLogin.ResumeLayout(false);
             this.tabpgLogin.ResumeLayout(false);
-            this.tabpgLogin.PerformLayout();
             this.pnBorderLG.ResumeLayout(false);
+            this.pnBorderLG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImageLG)).EndInit();
             this.tabpgSignup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbImageSU1)).EndInit();
@@ -2401,5 +2473,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBackSU;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBackFP1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBackFP2;
+        private Bunifu.UI.WinForms.BunifuCheckBox bunifuCheckBox1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel20;
     }
 }
