@@ -22,8 +22,8 @@ namespace WPFinalPlease
             lblBio.Text = frow["bio"].ToString();
             lblExpectedPrice.Text = frow["Expected_Price"].ToString();
             lblOccupation.Text = frow["occupation"].ToString();
-            lblSkill.Text = frow["skills"].ToString();
-            lblExperienceYear.Text = frow["Experience_Year"].ToString();
+            lblSkills.Text = frow["skills"].ToString();
+            lblExperience.Text = frow["Experience_Year"].ToString();
             lblStar.Text = frow["Star_rate"].ToString();
         }
     }

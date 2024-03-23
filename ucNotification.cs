@@ -41,5 +41,10 @@ namespace WPFinalPlease
         {
 
         }
+
+        private void bunifuShadowPanel3_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
     }
 }
