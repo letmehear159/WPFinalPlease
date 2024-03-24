@@ -1,6 +1,6 @@
 ﻿namespace WPFinalPlease
 {
-    partial class Form2
+    partial class FMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucLogin1 = new WPFinalPlease.ucLogin();
+            this.ucMainMenu1 = new WPFinalPlease.ucMainMenu();
             this.SuspendLayout();
             // 
-            // ucLogin1
+            // ucMainMenu1
             // 
-            this.ucLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.ucLogin1.Location = new System.Drawing.Point(11, 11);
-            this.ucLogin1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucLogin1.Name = "ucLogin1";
-            this.ucLogin1.Size = new System.Drawing.Size(825, 472);
-            this.ucLogin1.TabIndex = 0;
+            this.ucMainMenu1.Location = new System.Drawing.Point(0, 0);
+            this.ucMainMenu1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucMainMenu1.Name = "ucMainMenu1";
+            this.ucMainMenu1.Size = new System.Drawing.Size(960, 650);
+            this.ucMainMenu1.TabIndex = 0;
             // 
-            // Form2
+            // FMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 761);
-            this.Controls.Add(this.ucLogin1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(944, 641);
+            this.Controls.Add(this.ucMainMenu1);
+            this.Name = "FMenu";
+            this.Text = "FMenu";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ucLogin ucLogin1;
+        private ucMainMenu ucMainMenu1;
     }
 }

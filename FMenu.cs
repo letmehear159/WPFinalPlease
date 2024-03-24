@@ -10,14 +10,17 @@ using System.Windows.Forms;
 
 namespace WPFinalPlease
 {
-    public partial class Form2 : Form
+    public partial class FMenu : Form
     {
-        AccountDao accountDao = new AccountDao();
-        public Form2()
+        Account account;
+        public FMenu()
         {
             InitializeComponent();
-            
         }
-       
+        public FMenu(Account account)
+        {
+            InitializeComponent();
+            this.account = account;
+        }
     }
 }
