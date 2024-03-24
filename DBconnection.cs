@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Remoting.Messaging;
 
 namespace WPFinalPlease
 {
@@ -68,6 +69,38 @@ SqlConnection(Properties.Settings.Default.connStr);
                 conn.Close();
             }
         }
+        // Return true if has value
+        //False if empty
+        public bool isEmpty(string sqlStr)
+        {
+            try
+            {
+               conn.Open();
+               SqlCommand cmd = new SqlCommand(sqlStr, conn);
+               object result = cmd.ExecuteScalar();
+               int rowNumb= int.Parse(result.ToString());
+               if(rowNumb > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show("Failed To Execute" + ex);
+                return false;
+
+            }
+            finally
+
+            {
+                conn.Close();
+            }
+        }
 
         public DataTable refresh(string sqlStr)
         {
@@ -80,5 +113,6 @@ SqlConnection(Properties.Settings.Default.connStr);
             return loadAndRef(sqlStr);
 
         }
+      
     }
 }

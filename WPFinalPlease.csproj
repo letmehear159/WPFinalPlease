@@ -123,6 +123,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountDao.cs" />
+    <Compile Include="FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucSmallNoti.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,7 +139,7 @@
     </Compile>
     <Compile Include="Utility.cs" />
     <Compile Include="DBconnection.cs" />
-     <Compile Include="fJobAdd.cs">
+    <Compile Include="fJobAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fJobAdd.Designer.cs">
@@ -194,8 +202,8 @@
     </Compile>
     <Compile Include="ucWorkerDetail.Designer.cs">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
-</Compile>
-       <Compile Include="ucJobCard.cs">
+    </Compile>
+    <Compile Include="ucJobCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucJobCard.Designer.cs">
@@ -232,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fJobInfo.resx">
       <DependentUpon>fJobInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -271,7 +282,7 @@
     <EmbeddedResource Include="ucWorkerDetail.resx">
       <DependentUpon>ucWorkerDetail.cs</DependentUpon>
     </EmbeddedResource>
-     <EmbeddedResource Include="ucJobCard.resx">
+    <EmbeddedResource Include="ucJobCard.resx">
       <DependentUpon>ucJobCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucJobList.resx">
@@ -359,7 +370,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Left Arrow_512px.png" />
-     <None Include="Resources\icons8-sun-96.png" />
+    <None Include="Resources\icons8-sun-96.png" />
     <None Include="Resources\icons8-dark-mode-1001.png" />
     <None Include="Resources\icons8-moon-1001.png" />
     <None Include="Resources\icons8-search-100.png" />

@@ -90,7 +90,7 @@
             this.txtUsernameLG = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pnBorderLG = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuCheckBox1 = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.checkBRemember = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.linkFP = new System.Windows.Forms.LinkLabel();
             this.sprtLine = new Bunifu.UI.WinForms.BunifuSeparator();
             this.ptbImageLG = new System.Windows.Forms.PictureBox();
@@ -361,6 +361,7 @@
             this.btnSignupLG.TextMarginLeft = 0;
             this.btnSignupLG.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSignupLG.UseDefaultRadiusAndThickness = true;
+            this.btnSignupLG.Click += new System.EventHandler(this.btnSignupLG_Click);
             // 
             // btnLogin
             // 
@@ -451,6 +452,7 @@
             this.btnLogin.TextMarginLeft = 0;
             this.btnLogin.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnLogin.UseDefaultRadiusAndThickness = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPasswordLG
             // 
@@ -611,7 +613,7 @@
             this.pnBorderLG.BorderRadius = 20;
             this.pnBorderLG.BorderThickness = 1;
             this.pnBorderLG.Controls.Add(this.bunifuLabel20);
-            this.pnBorderLG.Controls.Add(this.bunifuCheckBox1);
+            this.pnBorderLG.Controls.Add(this.checkBRemember);
             this.pnBorderLG.Controls.Add(this.linkFP);
             this.pnBorderLG.Controls.Add(this.sprtLine);
             this.pnBorderLG.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -645,58 +647,58 @@
             this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuCheckBox1
+            // checkBRemember
             // 
-            this.bunifuCheckBox1.AllowBindingControlAnimation = true;
-            this.bunifuCheckBox1.AllowBindingControlColorChanges = false;
-            this.bunifuCheckBox1.AllowBindingControlLocation = true;
-            this.bunifuCheckBox1.AllowCheckBoxAnimation = false;
-            this.bunifuCheckBox1.AllowCheckmarkAnimation = true;
-            this.bunifuCheckBox1.AllowOnHoverStates = true;
-            this.bunifuCheckBox1.AutoCheck = true;
-            this.bunifuCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCheckBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCheckBox1.BackgroundImage")));
-            this.bunifuCheckBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bunifuCheckBox1.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.bunifuCheckBox1.BorderRadius = 12;
-            this.bunifuCheckBox1.Checked = false;
-            this.bunifuCheckBox1.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.bunifuCheckBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuCheckBox1.CustomCheckmarkImage = null;
-            this.bunifuCheckBox1.Location = new System.Drawing.Point(16, 193);
-            this.bunifuCheckBox1.MinimumSize = new System.Drawing.Size(17, 17);
-            this.bunifuCheckBox1.Name = "bunifuCheckBox1";
-            this.bunifuCheckBox1.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCheckBox1.OnCheck.BorderRadius = 12;
-            this.bunifuCheckBox1.OnCheck.BorderThickness = 2;
-            this.bunifuCheckBox1.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCheckBox1.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.bunifuCheckBox1.OnCheck.CheckmarkThickness = 2;
-            this.bunifuCheckBox1.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.bunifuCheckBox1.OnDisable.BorderRadius = 12;
-            this.bunifuCheckBox1.OnDisable.BorderThickness = 2;
-            this.bunifuCheckBox1.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.bunifuCheckBox1.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.bunifuCheckBox1.OnDisable.CheckmarkThickness = 2;
-            this.bunifuCheckBox1.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuCheckBox1.OnHoverChecked.BorderRadius = 12;
-            this.bunifuCheckBox1.OnHoverChecked.BorderThickness = 2;
-            this.bunifuCheckBox1.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuCheckBox1.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.bunifuCheckBox1.OnHoverChecked.CheckmarkThickness = 2;
-            this.bunifuCheckBox1.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuCheckBox1.OnHoverUnchecked.BorderRadius = 12;
-            this.bunifuCheckBox1.OnHoverUnchecked.BorderThickness = 1;
-            this.bunifuCheckBox1.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.bunifuCheckBox1.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuCheckBox1.OnUncheck.BorderRadius = 12;
-            this.bunifuCheckBox1.OnUncheck.BorderThickness = 1;
-            this.bunifuCheckBox1.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.bunifuCheckBox1.Size = new System.Drawing.Size(21, 21);
-            this.bunifuCheckBox1.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.bunifuCheckBox1.TabIndex = 3;
-            this.bunifuCheckBox1.ThreeState = false;
-            this.bunifuCheckBox1.ToolTipText = null;
+            this.checkBRemember.AllowBindingControlAnimation = true;
+            this.checkBRemember.AllowBindingControlColorChanges = false;
+            this.checkBRemember.AllowBindingControlLocation = true;
+            this.checkBRemember.AllowCheckBoxAnimation = false;
+            this.checkBRemember.AllowCheckmarkAnimation = true;
+            this.checkBRemember.AllowOnHoverStates = true;
+            this.checkBRemember.AutoCheck = true;
+            this.checkBRemember.BackColor = System.Drawing.Color.Transparent;
+            this.checkBRemember.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBRemember.BackgroundImage")));
+            this.checkBRemember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.checkBRemember.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.checkBRemember.BorderRadius = 12;
+            this.checkBRemember.Checked = true;
+            this.checkBRemember.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
+            this.checkBRemember.Cursor = System.Windows.Forms.Cursors.Default;
+            this.checkBRemember.CustomCheckmarkImage = null;
+            this.checkBRemember.Location = new System.Drawing.Point(16, 193);
+            this.checkBRemember.MinimumSize = new System.Drawing.Size(17, 17);
+            this.checkBRemember.Name = "checkBRemember";
+            this.checkBRemember.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.checkBRemember.OnCheck.BorderRadius = 12;
+            this.checkBRemember.OnCheck.BorderThickness = 2;
+            this.checkBRemember.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.checkBRemember.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.checkBRemember.OnCheck.CheckmarkThickness = 2;
+            this.checkBRemember.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.checkBRemember.OnDisable.BorderRadius = 12;
+            this.checkBRemember.OnDisable.BorderThickness = 2;
+            this.checkBRemember.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.checkBRemember.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.checkBRemember.OnDisable.CheckmarkThickness = 2;
+            this.checkBRemember.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.checkBRemember.OnHoverChecked.BorderRadius = 12;
+            this.checkBRemember.OnHoverChecked.BorderThickness = 2;
+            this.checkBRemember.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.checkBRemember.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.checkBRemember.OnHoverChecked.CheckmarkThickness = 2;
+            this.checkBRemember.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.checkBRemember.OnHoverUnchecked.BorderRadius = 12;
+            this.checkBRemember.OnHoverUnchecked.BorderThickness = 1;
+            this.checkBRemember.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.checkBRemember.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.checkBRemember.OnUncheck.BorderRadius = 12;
+            this.checkBRemember.OnUncheck.BorderThickness = 1;
+            this.checkBRemember.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.checkBRemember.Size = new System.Drawing.Size(21, 21);
+            this.checkBRemember.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.checkBRemember.TabIndex = 3;
+            this.checkBRemember.ThreeState = false;
+            this.checkBRemember.ToolTipText = null;
             // 
             // linkFP
             // 
@@ -847,6 +849,7 @@
             this.btnBackSU.TextMarginLeft = 0;
             this.btnBackSU.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBackSU.UseDefaultRadiusAndThickness = true;
+            this.btnBackSU.Click += new System.EventHandler(this.btnBackSU_Click);
             // 
             // txtEmailSU
             // 
@@ -1275,6 +1278,7 @@
             this.btnSignupSU.TextMarginLeft = 0;
             this.btnSignupSU.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSignupSU.UseDefaultRadiusAndThickness = true;
+            this.btnSignupSU.Click += new System.EventHandler(this.btnSignupSU_Click);
             // 
             // tabpgSignup2
             // 
@@ -1378,6 +1382,7 @@
             this.btnFinishSU.TextMarginLeft = 0;
             this.btnFinishSU.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnFinishSU.UseDefaultRadiusAndThickness = true;
+            this.btnFinishSU.Click += new System.EventHandler(this.btnFinishSU_Click);
             // 
             // pnBorderSU2
             // 
@@ -1436,11 +1441,11 @@
             this.tabpgFP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.tabpgFP1.Controls.Add(this.btnBackFP1);
             this.tabpgFP1.Controls.Add(this.lblFP1);
-            this.tabpgFP1.Controls.Add(this.pnBorderFP1);
             this.tabpgFP1.Controls.Add(this.txtEmailFP);
             this.tabpgFP1.Controls.Add(this.txtUsernameFP);
             this.tabpgFP1.Controls.Add(this.btnNextFP1);
             this.tabpgFP1.Controls.Add(this.ptbImageFP1);
+            this.tabpgFP1.Controls.Add(this.pnBorderFP1);
             this.tabpgFP1.Location = new System.Drawing.Point(4, 4);
             this.tabpgFP1.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgFP1.Name = "tabpgFP1";
@@ -1537,6 +1542,7 @@
             this.btnBackFP1.TextMarginLeft = 0;
             this.btnBackFP1.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBackFP1.UseDefaultRadiusAndThickness = true;
+            this.btnBackFP1.Click += new System.EventHandler(this.btnBackFP1_Click);
             // 
             // lblFP1
             // 
@@ -1819,6 +1825,7 @@
             this.btnNextFP1.TextMarginLeft = 0;
             this.btnNextFP1.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNextFP1.UseDefaultRadiusAndThickness = true;
+            this.btnNextFP1.Click += new System.EventHandler(this.btnNextFP1_Click);
             // 
             // ptbImageFP1
             // 
@@ -1836,11 +1843,11 @@
             this.tabpgFP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.tabpgFP2.Controls.Add(this.btnBackFP2);
             this.tabpgFP2.Controls.Add(this.lblFP2);
-            this.tabpgFP2.Controls.Add(this.pnBorderFP2);
             this.tabpgFP2.Controls.Add(this.txtCfPasswordFP);
             this.tabpgFP2.Controls.Add(this.txtPasswordFP);
             this.tabpgFP2.Controls.Add(this.btnNextFP2);
             this.tabpgFP2.Controls.Add(this.ptbImageFP2);
+            this.tabpgFP2.Controls.Add(this.pnBorderFP2);
             this.tabpgFP2.Location = new System.Drawing.Point(4, 4);
             this.tabpgFP2.Margin = new System.Windows.Forms.Padding(2);
             this.tabpgFP2.Name = "tabpgFP2";
@@ -1937,6 +1944,7 @@
             this.btnBackFP2.TextMarginLeft = 0;
             this.btnBackFP2.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBackFP2.UseDefaultRadiusAndThickness = true;
+            this.btnBackFP2.Click += new System.EventHandler(this.btnBackFP2_Click);
             // 
             // lblFP2
             // 
@@ -2218,6 +2226,7 @@
             this.btnNextFP2.TextMarginLeft = 0;
             this.btnNextFP2.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNextFP2.UseDefaultRadiusAndThickness = true;
+            this.btnNextFP2.Click += new System.EventHandler(this.btnNextFP2_Click);
             // 
             // ptbImageFP2
             // 
@@ -2332,6 +2341,7 @@
             this.btnFinishFP.TextMarginLeft = 0;
             this.btnFinishFP.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnFinishFP.UseDefaultRadiusAndThickness = true;
+            this.btnFinishFP.Click += new System.EventHandler(this.btnFinishFP_Click);
             // 
             // pnBorderFP3
             // 
@@ -2398,6 +2408,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucLogin";
             this.Size = new System.Drawing.Size(825, 472);
+            this.Load += new System.EventHandler(this.ucLogin_Load);
             this.tabctrlLogin.ResumeLayout(false);
             this.tabpgLogin.ResumeLayout(false);
             this.pnBorderLG.ResumeLayout(false);
@@ -2460,7 +2471,7 @@
         public Bunifu.UI.WinForms.BunifuTextBox txtPasswordLG;
         public Bunifu.UI.WinForms.BunifuTextBox txtUsernameLG;
         public Bunifu.UI.WinForms.BunifuShadowPanel pnBorderLG;
-        public Bunifu.UI.WinForms.BunifuCheckBox bunifuCheckBox1;
+        public Bunifu.UI.WinForms.BunifuCheckBox checkBRemember;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel20;
         public System.Windows.Forms.TabControl tabctrlLogin;
         public System.Windows.Forms.PictureBox ptbImageLG;
