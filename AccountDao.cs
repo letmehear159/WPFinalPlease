@@ -20,6 +20,40 @@ namespace WPFinalPlease
             return list.Rows[0];
             
         }
+
+        public bool resetPassword(string username,string password)
+        {
+            string sqlStr = string.Format("Update Account set password='{0}' where username= '{1}'", password, username);
+          return dBconnection.executeNoMessage(sqlStr);
+
+        }
+        
+
+        public bool checkForgotAccount(string username,string email)
+        {
+            string sqlStr=string.Format("Select *from Account where username='{0}'",username);
+            Account checkAccount=dBconnection.checkAccount(sqlStr);
+            if (checkAccount==null)
+            {
+                return false;
+            }
+            if (!checkAccount.getEmail().ToLower().Equals(email.ToLower()))
+            {
+                return false;
+            }
+            return true;
+        }
+
+
+
+
+        public bool addAccount(Account newAccount)
+        {
+            string sqlStr=string.Format("Insert into account (username,password,email) values ('{0}','{1}','{2}')",newAccount.getUserName()
+                ,newAccount.getPassword(),newAccount.getEmail());
+           return dBconnection.executeNoMessage(sqlStr);
+          
+        }
       
         public Account getAccountFromLogin(string username,string password)
         {
@@ -30,18 +64,19 @@ namespace WPFinalPlease
             //Tiếp tục check nếu dữ liệu lấy ra có password trùng với password trên người dùng nhập vào hay không
             string CCCD= getAccount["CCCD"].ToString();
             string role= getAccount["role"].ToString();
-            Account newAccount = new Account(username,password,CCCD,role);
+            string email= getAccount["email"].ToString();
+            Account newAccount = new Account(username,password,CCCD,role,email);
             return newAccount;
             //Trả về newAccount chứa giá trị của user này 
         }
         public void rememberMe(string username, string password,Bunifu.UI.WinForms.BunifuCheckBox checkBox)
         {
             string sqlStr = string.Format("delete from {0}", "remember");
-            dBconnection.execute(sqlStr);
+            dBconnection.executeNoMessage(sqlStr);
             if (checkBox.Checked)
             {
                  sqlStr = string.Format("Insert into Remember values ('{0}','{1}')", username, password);
-                dBconnection.execute(sqlStr);
+                dBconnection.executeNoMessage(sqlStr);
             }
         }
         //Return the value from remember table in database

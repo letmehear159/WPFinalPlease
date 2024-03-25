@@ -39,6 +39,7 @@
             this.ucLogin1.Name = "ucLogin1";
             this.ucLogin1.Size = new System.Drawing.Size(825, 472);
             this.ucLogin1.TabIndex = 0;
+            this.ucLogin1.Load += new System.EventHandler(this.ucLogin1_Load);
             // 
             // Form2
             // 
