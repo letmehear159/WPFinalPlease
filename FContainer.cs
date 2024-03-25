@@ -12,7 +12,7 @@ namespace WPFinalPlease
 {
     public partial class FContainer : Form
     {
-        ucLogin ucLogin1 = new ucLogin();
+        ucLogin ucLogin1;
         public FContainer()
         {
 
@@ -21,7 +21,7 @@ namespace WPFinalPlease
         }
         private void UserControl_Hidden(object sender, EventArgs e)
         {
-            ucMainMenu ucMainMenu = new ucMainMenu();
+            ucMainMenu ucMainMenu = new ucMainMenu(ucLogin1.GetAccount());
             ucMainMenu.Dock = DockStyle.Fill;
             this.Controls.Add(ucMainMenu);
             ucMainMenu.turnOff += turnOffForm;
