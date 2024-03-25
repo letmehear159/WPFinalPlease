@@ -206,7 +206,7 @@
             this.btnClose.ButtonTextMarginLeft = 0;
             this.btnClose.ColorContrastOnClick = 45;
             this.btnClose.ColorContrastOnHover = 45;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
@@ -277,6 +277,7 @@
             this.btnClose.TextMarginLeft = 0;
             this.btnClose.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnClose.UseDefaultRadiusAndThickness = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSignupLG
             // 
@@ -296,7 +297,7 @@
             this.btnSignupLG.ButtonTextMarginLeft = 0;
             this.btnSignupLG.ColorContrastOnClick = 45;
             this.btnSignupLG.ColorContrastOnHover = 45;
-            this.btnSignupLG.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSignupLG.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
@@ -387,7 +388,7 @@
             this.btnLogin.ButtonTextMarginLeft = 0;
             this.btnLogin.ColorContrastOnClick = 45;
             this.btnLogin.ColorContrastOnHover = 45;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges3.BottomLeft = true;
             borderEdges3.BottomRight = true;
             borderEdges3.TopLeft = true;
@@ -670,7 +671,7 @@
             this.checkBRemember.BorderRadius = 12;
             this.checkBRemember.Checked = true;
             this.checkBRemember.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
-            this.checkBRemember.Cursor = System.Windows.Forms.Cursors.Default;
+            this.checkBRemember.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBRemember.CustomCheckmarkImage = null;
             this.checkBRemember.Location = new System.Drawing.Point(16, 193);
             this.checkBRemember.MinimumSize = new System.Drawing.Size(17, 17);
@@ -712,6 +713,7 @@
             this.linkFP.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkFP.AutoSize = true;
             this.linkFP.BackColor = System.Drawing.Color.White;
+            this.linkFP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkFP.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.linkFP.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkFP.Location = new System.Drawing.Point(87, 219);
@@ -786,7 +788,7 @@
             this.btnBackSU.ButtonTextMarginLeft = 0;
             this.btnBackSU.ColorContrastOnClick = 45;
             this.btnBackSU.ColorContrastOnHover = 45;
-            this.btnBackSU.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBackSU.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges4.BottomLeft = true;
             borderEdges4.BottomRight = true;
             borderEdges4.TopLeft = true;
@@ -1216,7 +1218,7 @@
             this.btnSignupSU.ButtonTextMarginLeft = 0;
             this.btnSignupSU.ColorContrastOnClick = 45;
             this.btnSignupSU.ColorContrastOnHover = 45;
-            this.btnSignupSU.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSignupSU.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges5.BottomLeft = true;
             borderEdges5.BottomRight = true;
             borderEdges5.TopLeft = true;
@@ -1320,7 +1322,7 @@
             this.btnFinishSU.ButtonTextMarginLeft = 0;
             this.btnFinishSU.ColorContrastOnClick = 45;
             this.btnFinishSU.ColorContrastOnHover = 45;
-            this.btnFinishSU.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnFinishSU.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges6.BottomLeft = true;
             borderEdges6.BottomRight = true;
             borderEdges6.TopLeft = true;
@@ -1480,7 +1482,7 @@
             this.btnBackFP1.ButtonTextMarginLeft = 0;
             this.btnBackFP1.ColorContrastOnClick = 45;
             this.btnBackFP1.ColorContrastOnHover = 45;
-            this.btnBackFP1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBackFP1.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges7.BottomLeft = true;
             borderEdges7.BottomRight = true;
             borderEdges7.TopLeft = true;
@@ -1741,7 +1743,7 @@
             this.btnNextFP1.ButtonTextMarginLeft = 0;
             this.btnNextFP1.ColorContrastOnClick = 45;
             this.btnNextFP1.ColorContrastOnHover = 45;
-            this.btnNextFP1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNextFP1.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges8.BottomLeft = true;
             borderEdges8.BottomRight = true;
             borderEdges8.TopLeft = true;
@@ -1882,7 +1884,7 @@
             this.btnBackFP2.ButtonTextMarginLeft = 0;
             this.btnBackFP2.ColorContrastOnClick = 45;
             this.btnBackFP2.ColorContrastOnHover = 45;
-            this.btnBackFP2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBackFP2.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges9.BottomLeft = true;
             borderEdges9.BottomRight = true;
             borderEdges9.TopLeft = true;
@@ -2142,7 +2144,7 @@
             this.btnNextFP2.ButtonTextMarginLeft = 0;
             this.btnNextFP2.ColorContrastOnClick = 45;
             this.btnNextFP2.ColorContrastOnHover = 45;
-            this.btnNextFP2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNextFP2.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges10.BottomLeft = true;
             borderEdges10.BottomRight = true;
             borderEdges10.TopLeft = true;
@@ -2281,7 +2283,7 @@
             this.btnFinishFP.ButtonTextMarginLeft = 0;
             this.btnFinishFP.ColorContrastOnClick = 45;
             this.btnFinishFP.ColorContrastOnHover = 45;
-            this.btnFinishFP.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnFinishFP.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges11.BottomLeft = true;
             borderEdges11.BottomRight = true;
             borderEdges11.TopLeft = true;
