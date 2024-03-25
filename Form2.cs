@@ -13,11 +13,21 @@ namespace WPFinalPlease
     public partial class Form2 : Form
     {
         AccountDao accountDao = new AccountDao();
+        
         public Form2()
         {
             InitializeComponent();
+            ucLogin1.LoginHidden += UserControl_Hidden;
             
         }
-       
+        private void UserControl_Hidden(object sender, EventArgs e)
+        {
+            this.Hide(); // Ẩn Form khi UserControl được ẩn
+        }
+
+        private void ucLogin1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
