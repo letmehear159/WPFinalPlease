@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace WPFinalPlease
 {
-    public partial class Form2 : Form
+    public partial class FContainer : Form
     {
-        AccountDao accountDao = new AccountDao();
-        ucMainMenu ucMainMenu = new ucMainMenu();
         ucLogin ucLogin1 = new ucLogin();
-        public Form2()
+        public FContainer()
         {
 
             InitializeComponent();
-            ucMainMenu.turnOff += turnOffForm;
-            ucLogin1.btnLogin.Click += UserControl_Hidden;
 
         }
         private void UserControl_Hidden(object sender, EventArgs e)
@@ -28,26 +24,36 @@ namespace WPFinalPlease
             ucMainMenu ucMainMenu = new ucMainMenu();
             ucMainMenu.Dock = DockStyle.Fill;
             this.Controls.Add(ucMainMenu);
-            this.ucMainMenu= ucMainMenu;
+            ucMainMenu.turnOff += turnOffForm;
+            ucMainMenu.logOut += logOut;
         }
         private void turnOffForm(object sender, EventArgs e)
         {
             this.Close();
         }
-        
+        private void logOut(object sender, EventArgs e)
+        {
+            //openUcLogin(sender, e);
+            ucLogin1.Show();
+
+        }
 
         private void ucLogin1_Load(object sender, EventArgs e)
         {
-
+            ucLogin1.Show();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            openUcLogin(sender,e);
+        }
+        public void openUcLogin(object sender, EventArgs e)
+        {
             ucLogin ucLogin1 = new ucLogin();
             ucLogin1.Dock = DockStyle.Fill;
             this.Controls.Add(ucLogin1);
-            this.ucLogin1= ucLogin1;
             ucLogin1.LoginHidden += UserControl_Hidden;
+            this.ucLogin1= ucLogin1;
         }
     }
 }

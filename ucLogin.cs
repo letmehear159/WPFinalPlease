@@ -42,9 +42,8 @@ namespace WPFinalPlease
                 {
                     lblErrorMessLG.Visible=false;
                 }
-                this.Hide();
                 HideUserControl();
-
+                this.Hide();
             }
             else
             {

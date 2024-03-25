@@ -54,7 +54,8 @@ namespace WPFinalPlease
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            turnOff?.Invoke(this, EventArgs.Empty);
+            logOut?.Invoke(this, EventArgs.Empty);
+            this.Hide();
         }
         private void btnTurnOff_Click(object sender, EventArgs e)
         {

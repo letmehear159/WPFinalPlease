@@ -1,6 +1,6 @@
 ﻿namespace WPFinalPlease
 {
-    partial class Form2
+    partial class FContainer
     {
         /// <summary>
         /// Required designer variable.
