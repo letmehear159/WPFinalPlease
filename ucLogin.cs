@@ -12,6 +12,7 @@ namespace WPFinalPlease
 {
     public partial class ucLogin : UserControl
     {
+        private Account account;
         public event EventHandler LoginHidden;
         AccountDao accountDao =new AccountDao();
         DBconnection dBconnection = new DBconnection();
@@ -19,7 +20,10 @@ namespace WPFinalPlease
         {
             InitializeComponent();
         }
-
+        public Account GetAccount()
+        {
+            return account;
+        }
         //Phương thức để ẩn UserControl và thông báo cho Form
         public void HideUserControl()
         {
@@ -42,6 +46,7 @@ namespace WPFinalPlease
                 {
                     lblErrorMessLG.Visible=false;
                 }
+                this.account = getAccount;
                 HideUserControl();
                 this.Hide();
             }

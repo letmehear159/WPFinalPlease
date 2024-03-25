@@ -14,10 +14,17 @@ namespace WPFinalPlease
     {
         public event EventHandler turnOff;
         public event EventHandler logOut;
+        private Account account;
         public ucMainMenu()
         {
             InitializeComponent();
         }
+        public ucMainMenu(Account account)
+        {
+            InitializeComponent();
+            this.account = account;
+        }
+       
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
