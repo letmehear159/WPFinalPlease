@@ -76,6 +76,9 @@ namespace WPFinalPlease
             return newAccount;
             //Trả về newAccount chứa giá trị của user này 
         }
+        /// <summary>
+        /// This function is used to refresh data in Remember in sql whenever user login to menu 
+        /// </summary>
         public void rememberMe(string username, string password,Bunifu.UI.WinForms.BunifuCheckBox checkBox)
         {
             string sqlStr = string.Format("delete from {0}", "remember");

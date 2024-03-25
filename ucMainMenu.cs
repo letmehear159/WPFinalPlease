@@ -12,8 +12,10 @@ namespace WPFinalPlease
 {
     public partial class ucMainMenu : UserControl
     {
+        //These event is used when turn off button clicked, to active specific function
         public event EventHandler turnOff;
         public event EventHandler logOut;
+        //Store the user information passed from login
         private Account account;
         public ucMainMenu()
         {
@@ -61,7 +63,9 @@ namespace WPFinalPlease
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            // Execute another event which is passed in Form container
             logOut?.Invoke(this, EventArgs.Empty);
+            //When loggout to loggin form then hide this uc
             this.Hide();
         }
         private void btnTurnOff_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ namespace WPFinalPlease
         //Phương thức để ẩn UserControl và thông báo cho Form
         public void HideUserControl()
         {
-            this.Hide();
+            // Execute for switching to menu form
             LoginHidden?.Invoke(this, EventArgs.Empty);
         }
 
@@ -41,18 +41,24 @@ namespace WPFinalPlease
             //Chuyển đến phần menu
             if (getAccount != null)
             {
+                //This function is used to refresh data.
                accountDao.rememberMe(username, password,checkBRemember);
-                if (lblErrorMessLG.Visible)
+                //Hide the red error message 
+                if (lblErrorMessLG.Visible)  
                 {
                     lblErrorMessLG.Visible=false;
                 }
+                //Save the data to pass it to ucMainMenu
                 this.account = getAccount;
+                //
                 HideUserControl();
+                //Hide uclogin form
                 this.Hide();
             }
+            // If account is null it means the user loggin wrong and show error message.
             else
             {
-                lblErrorMessLG.Text = "Failed";
+                lblErrorMessLG.Text = "Failed"; //
                 lblErrorMessLG.Visible = true;
                 return;
             }
@@ -139,6 +145,7 @@ namespace WPFinalPlease
         /// </summary>
         private void btnNextFP2_Click(object sender, EventArgs e)
         {
+            // Mật không không khớp 
             string password=txtPasswordFP.Text;
             string cfPassword=txtCfPasswordFP.Text;
             if (!password.Equals(cfPassword))
@@ -148,14 +155,14 @@ namespace WPFinalPlease
                 return;
                 //inform
             }
-           
+            //Trường hợp chạy sql cập nhật data mới không thành công 
             if (!accountDao.resetPassword(txtUsernameFP.Text, password))
             {
                 lblErrorMessPW.Text = "Failed";
                 lblErrorMessPW.Visible = true;
                 return;
             }
-
+            //Switch to next tab page
             tabctrlLogin.SelectedIndex = 5;
             if (lblErrorMessPW.Visible)
                 lblErrorMessPW.Visible = false;
@@ -165,6 +172,7 @@ namespace WPFinalPlease
         {
             string username= txtUsernameFP.Text;
             string email= txtEmailFP.Text;
+            //Chạy trong database sql xem username và email có chuẩn với account cụ thể nào chứa
             if(accountDao.checkForgotAccount(username, email))
             {
                 //Thêm thông báo thành công 
@@ -187,6 +195,7 @@ namespace WPFinalPlease
 
         private void btnFinishFP_Click(object sender, EventArgs e)
         {
+            // After finish forgot password then clear all text in FP textbox
             txtCfPasswordFP.Text = string.Empty;
             txtUsernameFP.Text = string.Empty;
             txtEmailFP.Text = string.Empty;
