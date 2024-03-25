@@ -12,6 +12,8 @@ namespace WPFinalPlease
 {
     public partial class ucMainMenu : UserControl
     {
+        public event EventHandler turnOff;
+        public event EventHandler logOut;
         public ucMainMenu()
         {
             InitializeComponent();
@@ -32,10 +34,7 @@ namespace WPFinalPlease
 
         }
 
-        private void bunifuButton7_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
@@ -51,6 +50,16 @@ namespace WPFinalPlease
 
             // Hiển thị ucJobList mới
             newJobList.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            turnOff?.Invoke(this, EventArgs.Empty);
+        }
+        private void btnTurnOff_Click(object sender, EventArgs e)
+        {
+            //Thông báo message yes no turn off 
+            turnOff?.Invoke(this, EventArgs.Empty);
         }
     }
 }

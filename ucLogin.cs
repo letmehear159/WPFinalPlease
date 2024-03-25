@@ -20,7 +20,7 @@ namespace WPFinalPlease
             InitializeComponent();
         }
 
-        // Phương thức để ẩn UserControl và thông báo cho Form
+        //Phương thức để ẩn UserControl và thông báo cho Form
         public void HideUserControl()
         {
             this.Hide();
@@ -38,13 +38,13 @@ namespace WPFinalPlease
             if (getAccount != null)
             {
                accountDao.rememberMe(username, password,checkBRemember);
-                FMenu fMenu = new FMenu(getAccount);
-                fMenu.Show();
-                HideUserControl();
                 if (lblErrorMessLG.Visible)
                 {
                     lblErrorMessLG.Visible=false;
                 }
+                this.Hide();
+                HideUserControl();
+
             }
             else
             {
@@ -193,6 +193,11 @@ namespace WPFinalPlease
         private void linkFP_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             tabctrlLogin.SelectedIndex = 3;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

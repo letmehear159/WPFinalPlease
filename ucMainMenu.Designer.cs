@@ -101,7 +101,7 @@
             this.btnAccountSetting.IdleIconRightImage = null;
             this.btnAccountSetting.IndicateFocus = false;
             this.btnAccountSetting.Location = new System.Drawing.Point(0, 410);
-            this.btnAccountSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccountSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccountSetting.Name = "btnAccountSetting";
             this.btnAccountSetting.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAccountSetting.OnDisabledState.BorderRadius = 1;
@@ -158,13 +158,13 @@
             this.bunifuPanel1.Controls.Add(this.btnJobList);
             this.bunifuPanel1.Controls.Add(this.btnChangeAvatar);
             this.bunifuPanel1.Controls.Add(this.pBoxAvatar);
-            this.bunifuPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(225, 650);
+            this.bunifuPanel1.Size = new System.Drawing.Size(225, 654);
             this.bunifuPanel1.TabIndex = 0;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
@@ -179,7 +179,7 @@
             this.bunifuPanel2.Controls.Add(this.btnTurnOff);
             this.bunifuPanel2.Controls.Add(this.btnLogout);
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 488);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = false;
             this.bunifuPanel2.Size = new System.Drawing.Size(225, 162);
@@ -233,7 +233,7 @@
             this.btnTurnOff.IdleIconRightImage = null;
             this.btnTurnOff.IndicateFocus = false;
             this.btnTurnOff.Location = new System.Drawing.Point(29, 93);
-            this.btnTurnOff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTurnOff.Margin = new System.Windows.Forms.Padding(2);
             this.btnTurnOff.Name = "btnTurnOff";
             this.btnTurnOff.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTurnOff.OnDisabledState.BorderRadius = 1;
@@ -274,6 +274,7 @@
             this.btnTurnOff.TextMarginLeft = 0;
             this.btnTurnOff.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnTurnOff.UseDefaultRadiusAndThickness = true;
+            this.btnTurnOff.Click += new System.EventHandler(this.btnTurnOff_Click);
             // 
             // btnLogout
             // 
@@ -326,7 +327,7 @@
             this.btnLogout.IdleIconRightImage = null;
             this.btnLogout.IndicateFocus = false;
             this.btnLogout.Location = new System.Drawing.Point(29, 39);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.OnDisabledState.BorderRadius = 1;
@@ -367,7 +368,7 @@
             this.btnLogout.TextMarginLeft = 0;
             this.btnLogout.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnLogout.UseDefaultRadiusAndThickness = true;
-            this.btnLogout.Click += new System.EventHandler(this.bunifuButton7_Click);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnNotification
             // 
@@ -417,7 +418,7 @@
             this.btnNotification.IdleIconRightImage = null;
             this.btnNotification.IndicateFocus = false;
             this.btnNotification.Location = new System.Drawing.Point(0, 362);
-            this.btnNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNotification.OnDisabledState.BorderRadius = 1;
@@ -507,7 +508,7 @@
             this.btnOngoingWork.IdleIconRightImage = null;
             this.btnOngoingWork.IndicateFocus = false;
             this.btnOngoingWork.Location = new System.Drawing.Point(0, 314);
-            this.btnOngoingWork.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOngoingWork.Margin = new System.Windows.Forms.Padding(2);
             this.btnOngoingWork.Name = "btnOngoingWork";
             this.btnOngoingWork.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOngoingWork.OnDisabledState.BorderRadius = 1;
@@ -597,7 +598,7 @@
             this.btnWorkerList.IdleIconRightImage = null;
             this.btnWorkerList.IndicateFocus = false;
             this.btnWorkerList.Location = new System.Drawing.Point(0, 266);
-            this.btnWorkerList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWorkerList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWorkerList.Name = "btnWorkerList";
             this.btnWorkerList.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWorkerList.OnDisabledState.BorderRadius = 1;
@@ -687,7 +688,7 @@
             this.btnJobList.IdleIconRightImage = null;
             this.btnJobList.IndicateFocus = false;
             this.btnJobList.Location = new System.Drawing.Point(0, 219);
-            this.btnJobList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJobList.Margin = new System.Windows.Forms.Padding(2);
             this.btnJobList.Name = "btnJobList";
             this.btnJobList.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnJobList.OnDisabledState.BorderRadius = 1;
@@ -778,7 +779,7 @@
             this.btnChangeAvatar.IdleIconRightImage = null;
             this.btnChangeAvatar.IndicateFocus = false;
             this.btnChangeAvatar.Location = new System.Drawing.Point(37, 161);
-            this.btnChangeAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangeAvatar.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangeAvatar.Name = "btnChangeAvatar";
             this.btnChangeAvatar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnChangeAvatar.OnDisabledState.BorderRadius = 1;
@@ -823,7 +824,7 @@
             // pBoxAvatar
             // 
             this.pBoxAvatar.Location = new System.Drawing.Point(75, 45);
-            this.pBoxAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBoxAvatar.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxAvatar.Name = "pBoxAvatar";
             this.pBoxAvatar.Size = new System.Drawing.Size(75, 81);
             this.pBoxAvatar.TabIndex = 0;
@@ -835,9 +836,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnAccountSetting);
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucMainMenu";
-            this.Size = new System.Drawing.Size(960, 650);
+            this.Size = new System.Drawing.Size(960, 654);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAvatar)).EndInit();

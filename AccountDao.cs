@@ -15,8 +15,13 @@ namespace WPFinalPlease
         DBconnection dBconnection = new DBconnection();
         public DataRow getAccountFromUsername(string username)
         {
-           string sqlStr = string.Format("SELECT *FROM {0} WHERE username = '{1}'", "Account",username);
-           DataTable list= dBconnection.load(sqlStr);
+            string sqlStr = string.Format("SELECT *FROM {0} WHERE username = '{1}'", "Account",username);
+            string sqlStrGetCount = string.Format("SELECT COUNT(*) FROM account where username='{0}'", username) ;
+            if (!dBconnection.isEmpty(sqlStrGetCount))
+            {
+                return null;
+            }
+            DataTable list = dBconnection.load(sqlStr);
             return list.Rows[0];
             
         }
@@ -59,6 +64,8 @@ namespace WPFinalPlease
         {
             string sqlStr = string.Format("Select * from {0} where username = '{1}'","Account",username);
             DataRow getAccount = getAccountFromUsername(username);
+            if (getAccount == null)
+                return null;
             //Check null hay không 
             //Nếu không null thì bắt đầu lấy giá trị đổ ra 
             //Tiếp tục check nếu dữ liệu lấy ra có password trùng với password trên người dùng nhập vào hay không
