@@ -12,6 +12,8 @@ namespace WPFinalPlease
 {
     public partial class ucAccount : UserControl
     {
+        PersonDao personDao=new PersonDao();
+        Account account=new Account();
         public ucAccount()
         {
             InitializeComponent();
@@ -32,6 +34,13 @@ namespace WPFinalPlease
             string phone=txtPhone.Text;
             string email=txtEmail.Text;
             Person person = new Person(name, cccd, address, gender, phone, email,yourAge);
+            if (!Utility.CheckAccountInfoCustomer(person))
+            {
+                return;
+            }
+            //Tạo dữ liệu người dùng trong worker 
+            personDao.addPersonalInformationCustome(person);
+
 
 
         }
