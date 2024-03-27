@@ -13,7 +13,7 @@ namespace WPFinalPlease
 {
     public partial class ucAccount : UserControl
     {
-        PersonDao personDao=new PersonDao();
+        PersonDao personDao = new PersonDao();
         public Account account;
         private AccountDao accountDao = new AccountDao();
         WorkerDao workerDao = new WorkerDao();
@@ -29,19 +29,19 @@ namespace WPFinalPlease
 
         private void btnChangeInfo_Click(object sender, EventArgs e)
         {
-            string name=txtName.Text;
+            string name = txtName.Text;
             DateTime yourAge = dtpBirthdate.Value;
-            string gender=txtGender.Text;
+            string gender = txtGender.Text;
             string cccd = txtCCCD.Text;
-            string address=txtAddress.Text;
-            string phone=txtPhone.Text;
-            string email=txtEmail.Text;
-            Person person = new Person(name, cccd, address, gender, phone, email,yourAge);
-            //if (!Utility.CheckAccountInfoCustomer(person))
-            //{
-            //    return;
-            //}
-            //Tạo dữ liệu người dùng trong worker 
+            string address = txtAddress.Text;
+            string phone = txtPhone.Text;
+            string email = txtEmail.Text;
+            Person person = new Person(name, cccd, address, gender, phone, email, yourAge);
+            if (!Utility.CheckAccountInfoCustomer(person))
+            {
+                return;
+            }
+            //Tạo dữ liệu người dùng trong worker
             if (account.getCCCD() == null)
             {
                 personDao.addPersonalInformationCustome(person);
@@ -59,9 +59,20 @@ namespace WPFinalPlease
             string username = account.getUserName();
             accountDao.addCCCDToAccount(username, cccd);
         }
-        private void ucAccount_Load(object sender, EventArgs e)
+        private void btnRegister_Click_1(object sender, EventArgs e)
         {
-            if(account.getCCCD()==null)
+            string occupation = drdOccupation.SelectedItem.ToString();
+            string certificate = drdCertificate.SelectedItem.ToString();
+            int experience = int.Parse(txtExperience.Text);
+            float expectedSalary = float.Parse(txtSalary.Text);
+            Worker worker = new Worker(occupation, experience, expectedSalary, certificate);
+            workerDao.changeFromUserToWorker(worker, account.getCCCD());
+
+        }
+
+        private void ucAccount_Load_1(object sender, EventArgs e)
+        {
+            if (account.getCCCD() == null)
             {
                 return;
             }
@@ -77,18 +88,6 @@ namespace WPFinalPlease
             }
             Person person = personDao.getInformationFromCCCD(account.getCCCD());
             Utility.fillInformationAccountForUser(person, this);
-        }
-
-
-        private void btnRegister_Click_1(object sender, EventArgs e)
-        {
-            string occupation = drdOccupation.SelectedItem.ToString();
-            string certificate = drdCertificate.SelectedItem.ToString();
-            int experience = int.Parse(txtExperience.Text);
-            float expectedSalary = float.Parse(txtSalary.Text);
-            Worker worker = new Worker(occupation, experience, expectedSalary, certificate);
-            workerDao.changeFromUserToWorker(worker, account.getCCCD());
-
         }
     }
 }
