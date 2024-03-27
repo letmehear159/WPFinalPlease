@@ -13,7 +13,14 @@ namespace WPFinalPlease
     internal class DBconnection
     {
         SqlConnection conn = new
-SqlConnection(Properties.Settings.Default.conStr);
+SqlConnection(Properties.Settings.Default.connStr);
+        public DataRow getValueFromCCCD(string sqlStr,string sqlCheckHas)
+        {
+            if(!isEmpty(sqlCheckHas)) return null;
+            DataTable value = load(sqlStr);
+            if(value == null) return null;
+            return value.Rows[0];
+        }
         public Account checkAccount( string sqlStr)
         {
             try
@@ -27,6 +34,46 @@ SqlConnection(Properties.Settings.Default.conStr);
                     string password=dataReader.GetString(1);
                     string email=dataReader.GetString(4);
                     return new Account(username, password, email);  
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error to find value account !");
+                return null;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public Person GetPerson(string sqlStr)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                SqlDataReader dataReader = cmd.ExecuteReader();
+                if (dataReader.Read())
+                {
+        //             protected string name;
+        //protected string cccd;
+        //protected string address;
+        //protected string gender;
+        //protected string phone;
+        //protected string email;
+        //protected DateTime birth;
+                    string name = dataReader.GetString(0);
+                    string cccd=dataReader.GetString(3);
+                    string address= dataReader.GetString(1);
+                    string gender= dataReader.GetString(2);
+                    string phone= dataReader.GetString(7);
+                    string email= dataReader.GetString(8);
+                    DateTime birth= dataReader.GetDateTime(14);
+                    return new Person(name, cccd, address, gender, phone, email, birth);
                 }
                 else
                 {

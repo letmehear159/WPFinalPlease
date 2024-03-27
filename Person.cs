@@ -25,6 +25,7 @@ namespace WPFinalPlease
             this.email = email;
             this.birth = birth;
         }
+        public Person() { }
 
         // Get methods for each protected property
         public string GetName()

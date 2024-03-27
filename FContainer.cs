@@ -29,9 +29,9 @@ namespace WPFinalPlease
             ucMainMenu.Dock = DockStyle.Fill;
             this.Controls.Add(ucMainMenu);
             //When this event executes, make it run other event from passed Function
-            
             ucMainMenu.turnOff += turnOffForm;
             ucMainMenu.logOut += logOut;
+            
         }
         private void turnOffForm(object sender, EventArgs e)
         {
@@ -61,5 +61,6 @@ namespace WPFinalPlease
             //Take this data to attribute above.
             this.ucLogin1= ucLogin1;
         }
+
     }
 }

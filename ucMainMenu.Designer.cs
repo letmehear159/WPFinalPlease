@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucMainMenu));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnAccountSetting = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -48,20 +48,24 @@
             this.btnJobList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnChangeAvatar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pBoxAvatar = new System.Windows.Forms.PictureBox();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabMainMenu = new System.Windows.Forms.TabControl();
+            this.tpJobList = new System.Windows.Forms.TabPage();
             this.ucJobList1 = new WPFinalPlease.ucJobList();
+            this.tpWorkerList = new System.Windows.Forms.TabPage();
+            this.ucWorkerList1 = new WPFinalPlease.ucWorkerList();
+            this.tpOngoingWork = new System.Windows.Forms.TabPage();
+            this.tpNotification = new System.Windows.Forms.TabPage();
+            this.ucNotification1 = new WPFinalPlease.ucNotification();
+            this.tpAccountSetting = new System.Windows.Forms.TabPage();
             this.ucAccount1 = new WPFinalPlease.ucAccount();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAvatar)).BeginInit();
-            this.tabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.tabMainMenu.SuspendLayout();
+            this.tpJobList.SuspendLayout();
+            this.tpWorkerList.SuspendLayout();
+            this.tpNotification.SuspendLayout();
+            this.tpAccountSetting.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAccountSetting
@@ -83,11 +87,11 @@
             this.btnAccountSetting.ColorContrastOnClick = 45;
             this.btnAccountSetting.ColorContrastOnHover = 45;
             this.btnAccountSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.btnAccountSetting.CustomizableEdges = borderEdges17;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAccountSetting.CustomizableEdges = borderEdges1;
             this.btnAccountSetting.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAccountSetting.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAccountSetting.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -111,8 +115,8 @@
             this.btnAccountSetting.IdleIconLeftImage = null;
             this.btnAccountSetting.IdleIconRightImage = null;
             this.btnAccountSetting.IndicateFocus = false;
-            this.btnAccountSetting.Location = new System.Drawing.Point(0, 505);
-            this.btnAccountSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAccountSetting.Location = new System.Drawing.Point(0, 550);
+            this.btnAccountSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccountSetting.Name = "btnAccountSetting";
             this.btnAccountSetting.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAccountSetting.OnDisabledState.BorderRadius = 1;
@@ -146,7 +150,7 @@
             this.btnAccountSetting.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAccountSetting.OnPressedState.IconLeftImage = null;
             this.btnAccountSetting.OnPressedState.IconRightImage = null;
-            this.btnAccountSetting.Size = new System.Drawing.Size(300, 50);
+            this.btnAccountSetting.Size = new System.Drawing.Size(300, 60);
             this.btnAccountSetting.TabIndex = 5;
             this.btnAccountSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAccountSetting.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -164,6 +168,7 @@
             this.bunifuPanel1.BorderRadius = 0;
             this.bunifuPanel1.BorderThickness = 0;
             this.bunifuPanel1.Controls.Add(this.bunifuPanel2);
+            this.bunifuPanel1.Controls.Add(this.btnAccountSetting);
             this.bunifuPanel1.Controls.Add(this.btnNotification);
             this.bunifuPanel1.Controls.Add(this.btnOngoingWork);
             this.bunifuPanel1.Controls.Add(this.btnWorkerList);
@@ -173,12 +178,11 @@
             this.bunifuPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(300, 805);
+            this.bunifuPanel1.Size = new System.Drawing.Size(300, 857);
             this.bunifuPanel1.TabIndex = 0;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // bunifuPanel2
             // 
@@ -190,11 +194,11 @@
             this.bunifuPanel2.BorderThickness = 0;
             this.bunifuPanel2.Controls.Add(this.btnTurnOff);
             this.bunifuPanel2.Controls.Add(this.btnLogout);
-            this.bunifuPanel2.Location = new System.Drawing.Point(0, 601);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel2.Location = new System.Drawing.Point(0, 630);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = false;
-            this.bunifuPanel2.Size = new System.Drawing.Size(300, 204);
+            this.bunifuPanel2.Size = new System.Drawing.Size(302, 166);
             this.bunifuPanel2.TabIndex = 6;
             // 
             // btnTurnOff
@@ -216,11 +220,11 @@
             this.btnTurnOff.ColorContrastOnClick = 45;
             this.btnTurnOff.ColorContrastOnHover = 45;
             this.btnTurnOff.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.btnTurnOff.CustomizableEdges = borderEdges18;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnTurnOff.CustomizableEdges = borderEdges2;
             this.btnTurnOff.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTurnOff.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTurnOff.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -238,14 +242,14 @@
             this.btnTurnOff.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnTurnOff.IconSize = 25;
             this.btnTurnOff.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.btnTurnOff.IdleBorderRadius = 37;
+            this.btnTurnOff.IdleBorderRadius = 30;
             this.btnTurnOff.IdleBorderThickness = 1;
             this.btnTurnOff.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.btnTurnOff.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_power_off_button_100;
             this.btnTurnOff.IdleIconRightImage = null;
             this.btnTurnOff.IndicateFocus = false;
-            this.btnTurnOff.Location = new System.Drawing.Point(39, 114);
-            this.btnTurnOff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTurnOff.Location = new System.Drawing.Point(46, 93);
+            this.btnTurnOff.Margin = new System.Windows.Forms.Padding(2);
             this.btnTurnOff.Name = "btnTurnOff";
             this.btnTurnOff.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTurnOff.OnDisabledState.BorderRadius = 1;
@@ -279,7 +283,7 @@
             this.btnTurnOff.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnTurnOff.OnPressedState.IconLeftImage = null;
             this.btnTurnOff.OnPressedState.IconRightImage = null;
-            this.btnTurnOff.Size = new System.Drawing.Size(220, 39);
+            this.btnTurnOff.Size = new System.Drawing.Size(194, 32);
             this.btnTurnOff.TabIndex = 7;
             this.btnTurnOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTurnOff.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -310,11 +314,11 @@
             this.btnLogout.ColorContrastOnClick = 45;
             this.btnLogout.ColorContrastOnHover = 45;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges19.BottomLeft = true;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = true;
-            borderEdges19.TopRight = true;
-            this.btnLogout.CustomizableEdges = borderEdges19;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnLogout.CustomizableEdges = borderEdges3;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -332,14 +336,14 @@
             this.btnLogout.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnLogout.IconSize = 25;
             this.btnLogout.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(211)))), ((int)(((byte)(33)))));
-            this.btnLogout.IdleBorderRadius = 42;
+            this.btnLogout.IdleBorderRadius = 34;
             this.btnLogout.IdleBorderThickness = 1;
             this.btnLogout.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(211)))), ((int)(((byte)(33)))));
             this.btnLogout.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_logout_96;
             this.btnLogout.IdleIconRightImage = null;
             this.btnLogout.IndicateFocus = false;
-            this.btnLogout.Location = new System.Drawing.Point(39, 48);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Location = new System.Drawing.Point(46, 39);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.OnDisabledState.BorderRadius = 1;
@@ -373,7 +377,7 @@
             this.btnLogout.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogout.OnPressedState.IconLeftImage = null;
             this.btnLogout.OnPressedState.IconRightImage = null;
-            this.btnLogout.Size = new System.Drawing.Size(220, 44);
+            this.btnLogout.Size = new System.Drawing.Size(198, 36);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogout.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -401,11 +405,11 @@
             this.btnNotification.ColorContrastOnClick = 45;
             this.btnNotification.ColorContrastOnHover = 45;
             this.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges20.BottomLeft = true;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = true;
-            borderEdges20.TopRight = true;
-            this.btnNotification.CustomizableEdges = borderEdges20;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnNotification.CustomizableEdges = borderEdges4;
             this.btnNotification.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNotification.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNotification.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -429,8 +433,8 @@
             this.btnNotification.IdleIconLeftImage = null;
             this.btnNotification.IdleIconRightImage = null;
             this.btnNotification.IndicateFocus = false;
-            this.btnNotification.Location = new System.Drawing.Point(0, 446);
-            this.btnNotification.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNotification.Location = new System.Drawing.Point(0, 466);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNotification.OnDisabledState.BorderRadius = 1;
@@ -464,7 +468,7 @@
             this.btnNotification.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNotification.OnPressedState.IconLeftImage = null;
             this.btnNotification.OnPressedState.IconRightImage = null;
-            this.btnNotification.Size = new System.Drawing.Size(300, 50);
+            this.btnNotification.Size = new System.Drawing.Size(300, 60);
             this.btnNotification.TabIndex = 4;
             this.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNotification.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -492,11 +496,11 @@
             this.btnOngoingWork.ColorContrastOnClick = 45;
             this.btnOngoingWork.ColorContrastOnHover = 45;
             this.btnOngoingWork.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges21.BottomLeft = true;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = true;
-            borderEdges21.TopRight = true;
-            this.btnOngoingWork.CustomizableEdges = borderEdges21;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnOngoingWork.CustomizableEdges = borderEdges5;
             this.btnOngoingWork.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOngoingWork.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOngoingWork.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -520,8 +524,8 @@
             this.btnOngoingWork.IdleIconLeftImage = null;
             this.btnOngoingWork.IdleIconRightImage = null;
             this.btnOngoingWork.IndicateFocus = false;
-            this.btnOngoingWork.Location = new System.Drawing.Point(0, 386);
-            this.btnOngoingWork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOngoingWork.Location = new System.Drawing.Point(0, 385);
+            this.btnOngoingWork.Margin = new System.Windows.Forms.Padding(2);
             this.btnOngoingWork.Name = "btnOngoingWork";
             this.btnOngoingWork.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOngoingWork.OnDisabledState.BorderRadius = 1;
@@ -555,7 +559,7 @@
             this.btnOngoingWork.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnOngoingWork.OnPressedState.IconLeftImage = null;
             this.btnOngoingWork.OnPressedState.IconRightImage = null;
-            this.btnOngoingWork.Size = new System.Drawing.Size(300, 50);
+            this.btnOngoingWork.Size = new System.Drawing.Size(300, 60);
             this.btnOngoingWork.TabIndex = 3;
             this.btnOngoingWork.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnOngoingWork.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -583,11 +587,11 @@
             this.btnWorkerList.ColorContrastOnClick = 45;
             this.btnWorkerList.ColorContrastOnHover = 45;
             this.btnWorkerList.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges22.BottomLeft = true;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = true;
-            borderEdges22.TopRight = true;
-            this.btnWorkerList.CustomizableEdges = borderEdges22;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnWorkerList.CustomizableEdges = borderEdges6;
             this.btnWorkerList.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnWorkerList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWorkerList.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -611,8 +615,8 @@
             this.btnWorkerList.IdleIconLeftImage = null;
             this.btnWorkerList.IdleIconRightImage = null;
             this.btnWorkerList.IndicateFocus = false;
-            this.btnWorkerList.Location = new System.Drawing.Point(0, 327);
-            this.btnWorkerList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWorkerList.Location = new System.Drawing.Point(2, 303);
+            this.btnWorkerList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWorkerList.Name = "btnWorkerList";
             this.btnWorkerList.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnWorkerList.OnDisabledState.BorderRadius = 1;
@@ -646,7 +650,7 @@
             this.btnWorkerList.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnWorkerList.OnPressedState.IconLeftImage = null;
             this.btnWorkerList.OnPressedState.IconRightImage = null;
-            this.btnWorkerList.Size = new System.Drawing.Size(300, 50);
+            this.btnWorkerList.Size = new System.Drawing.Size(300, 60);
             this.btnWorkerList.TabIndex = 2;
             this.btnWorkerList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnWorkerList.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -666,7 +670,7 @@
             this.btnJobList.AutoSizeLeftIcon = true;
             this.btnJobList.AutoSizeRightIcon = true;
             this.btnJobList.BackColor = System.Drawing.Color.Transparent;
-            this.btnJobList.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnJobList.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.btnJobList.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnJobList.BackgroundImage")));
             this.btnJobList.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnJobList.ButtonText = "Job List";
@@ -674,11 +678,11 @@
             this.btnJobList.ColorContrastOnClick = 45;
             this.btnJobList.ColorContrastOnHover = 45;
             this.btnJobList.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges23.BottomLeft = true;
-            borderEdges23.BottomRight = true;
-            borderEdges23.TopLeft = true;
-            borderEdges23.TopRight = true;
-            this.btnJobList.CustomizableEdges = borderEdges23;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnJobList.CustomizableEdges = borderEdges7;
             this.btnJobList.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnJobList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnJobList.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -698,12 +702,12 @@
             this.btnJobList.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnJobList.IdleBorderRadius = 1;
             this.btnJobList.IdleBorderThickness = 1;
-            this.btnJobList.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnJobList.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.btnJobList.IdleIconLeftImage = null;
             this.btnJobList.IdleIconRightImage = null;
             this.btnJobList.IndicateFocus = false;
-            this.btnJobList.Location = new System.Drawing.Point(0, 270);
-            this.btnJobList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJobList.Location = new System.Drawing.Point(0, 219);
+            this.btnJobList.Margin = new System.Windows.Forms.Padding(2);
             this.btnJobList.Name = "btnJobList";
             this.btnJobList.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnJobList.OnDisabledState.BorderRadius = 1;
@@ -725,7 +729,7 @@
             this.btnJobList.OnIdleState.BorderRadius = 1;
             this.btnJobList.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnJobList.OnIdleState.BorderThickness = 1;
-            this.btnJobList.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnJobList.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.btnJobList.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnJobList.OnIdleState.IconLeftImage = null;
             this.btnJobList.OnIdleState.IconRightImage = null;
@@ -737,7 +741,7 @@
             this.btnJobList.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnJobList.OnPressedState.IconLeftImage = null;
             this.btnJobList.OnPressedState.IconRightImage = null;
-            this.btnJobList.Size = new System.Drawing.Size(300, 50);
+            this.btnJobList.Size = new System.Drawing.Size(300, 60);
             this.btnJobList.TabIndex = 1;
             this.btnJobList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnJobList.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -765,11 +769,11 @@
             this.btnChangeAvatar.ColorContrastOnClick = 45;
             this.btnChangeAvatar.ColorContrastOnHover = 45;
             this.btnChangeAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges24.BottomLeft = true;
-            borderEdges24.BottomRight = true;
-            borderEdges24.TopLeft = true;
-            borderEdges24.TopRight = true;
-            this.btnChangeAvatar.CustomizableEdges = borderEdges24;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnChangeAvatar.CustomizableEdges = borderEdges8;
             this.btnChangeAvatar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnChangeAvatar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnChangeAvatar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -787,14 +791,14 @@
             this.btnChangeAvatar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnChangeAvatar.IconSize = 25;
             this.btnChangeAvatar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(124)))));
-            this.btnChangeAvatar.IdleBorderRadius = 37;
+            this.btnChangeAvatar.IdleBorderRadius = 30;
             this.btnChangeAvatar.IdleBorderThickness = 1;
             this.btnChangeAvatar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(124)))));
             this.btnChangeAvatar.IdleIconLeftImage = null;
             this.btnChangeAvatar.IdleIconRightImage = null;
             this.btnChangeAvatar.IndicateFocus = false;
-            this.btnChangeAvatar.Location = new System.Drawing.Point(49, 198);
-            this.btnChangeAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChangeAvatar.Location = new System.Drawing.Point(72, 160);
+            this.btnChangeAvatar.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangeAvatar.Name = "btnChangeAvatar";
             this.btnChangeAvatar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnChangeAvatar.OnDisabledState.BorderRadius = 1;
@@ -828,7 +832,7 @@
             this.btnChangeAvatar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnChangeAvatar.OnPressedState.IconLeftImage = null;
             this.btnChangeAvatar.OnPressedState.IconRightImage = null;
-            this.btnChangeAvatar.Size = new System.Drawing.Size(201, 39);
+            this.btnChangeAvatar.Size = new System.Drawing.Size(151, 32);
             this.btnChangeAvatar.TabIndex = 2;
             this.btnChangeAvatar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnChangeAvatar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -838,113 +842,133 @@
             // 
             // pBoxAvatar
             // 
-            this.pBoxAvatar.Location = new System.Drawing.Point(100, 55);
-            this.pBoxAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pBoxAvatar.Location = new System.Drawing.Point(110, 44);
+            this.pBoxAvatar.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxAvatar.Name = "pBoxAvatar";
-            this.pBoxAvatar.Size = new System.Drawing.Size(100, 100);
+            this.pBoxAvatar.Size = new System.Drawing.Size(75, 81);
             this.pBoxAvatar.TabIndex = 0;
             this.pBoxAvatar.TabStop = false;
             // 
-            // tabControl
+            // tabMainMenu
             // 
-            this.tabControl.Controls.Add(this.tabPage1);
-            this.tabControl.Controls.Add(this.tabPage2);
-            this.tabControl.Controls.Add(this.tabPage3);
-            this.tabControl.Controls.Add(this.tabPage4);
-            this.tabControl.Controls.Add(this.tabPage5);
-            this.tabControl.ItemSize = new System.Drawing.Size(30, 20);
-            this.tabControl.Location = new System.Drawing.Point(300, -24);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.Padding = new System.Drawing.Point(0, 1);
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(980, 829);
-            this.tabControl.TabIndex = 6;
+            this.tabMainMenu.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tabMainMenu.Controls.Add(this.tpJobList);
+            this.tabMainMenu.Controls.Add(this.tpWorkerList);
+            this.tabMainMenu.Controls.Add(this.tpOngoingWork);
+            this.tabMainMenu.Controls.Add(this.tpNotification);
+            this.tabMainMenu.Controls.Add(this.tpAccountSetting);
+            this.tabMainMenu.Location = new System.Drawing.Point(300, 0);
+            this.tabMainMenu.Name = "tabMainMenu";
+            this.tabMainMenu.SelectedIndex = 0;
+            this.tabMainMenu.Size = new System.Drawing.Size(980, 817);
+            this.tabMainMenu.TabIndex = 6;
             // 
-            // tabPage1
+            // tpJobList
             // 
-            this.tabPage1.Controls.Add(this.ucJobList1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(972, 801);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(972, 801);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(972, 801);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(972, 801);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.ucAccount1);
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(972, 801);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tpJobList.Controls.Add(this.ucJobList1);
+            this.tpJobList.Location = new System.Drawing.Point(4, 4);
+            this.tpJobList.Name = "tpJobList";
+            this.tpJobList.Padding = new System.Windows.Forms.Padding(3);
+            this.tpJobList.Size = new System.Drawing.Size(972, 791);
+            this.tpJobList.TabIndex = 0;
+            this.tpJobList.Text = "tabPage1";
+            this.tpJobList.UseVisualStyleBackColor = true;
             // 
             // ucJobList1
             // 
-            this.ucJobList1.Location = new System.Drawing.Point(-4, 0);
+            this.ucJobList1.Location = new System.Drawing.Point(0, 2);
+            this.ucJobList1.Margin = new System.Windows.Forms.Padding(2);
             this.ucJobList1.Name = "ucJobList1";
             this.ucJobList1.Size = new System.Drawing.Size(980, 800);
             this.ucJobList1.TabIndex = 0;
+            this.ucJobList1.Load += new System.EventHandler(this.ucJobList1_Load);
+            // 
+            // tpWorkerList
+            // 
+            this.tpWorkerList.Controls.Add(this.ucWorkerList1);
+            this.tpWorkerList.Location = new System.Drawing.Point(4, 4);
+            this.tpWorkerList.Name = "tpWorkerList";
+            this.tpWorkerList.Padding = new System.Windows.Forms.Padding(3);
+            this.tpWorkerList.Size = new System.Drawing.Size(972, 791);
+            this.tpWorkerList.TabIndex = 1;
+            this.tpWorkerList.Text = "tabPage2";
+            this.tpWorkerList.UseVisualStyleBackColor = true;
+            // 
+            // ucWorkerList1
+            // 
+            this.ucWorkerList1.Location = new System.Drawing.Point(-4, -3);
+            this.ucWorkerList1.Name = "ucWorkerList1";
+            this.ucWorkerList1.Size = new System.Drawing.Size(980, 800);
+            this.ucWorkerList1.TabIndex = 0;
+            // 
+            // tpOngoingWork
+            // 
+            this.tpOngoingWork.Location = new System.Drawing.Point(4, 4);
+            this.tpOngoingWork.Name = "tpOngoingWork";
+            this.tpOngoingWork.Padding = new System.Windows.Forms.Padding(3);
+            this.tpOngoingWork.Size = new System.Drawing.Size(972, 791);
+            this.tpOngoingWork.TabIndex = 2;
+            this.tpOngoingWork.Text = "tabPage3";
+            this.tpOngoingWork.UseVisualStyleBackColor = true;
+            // 
+            // tpNotification
+            // 
+            this.tpNotification.Controls.Add(this.ucNotification1);
+            this.tpNotification.Location = new System.Drawing.Point(4, 4);
+            this.tpNotification.Name = "tpNotification";
+            this.tpNotification.Padding = new System.Windows.Forms.Padding(3);
+            this.tpNotification.Size = new System.Drawing.Size(972, 791);
+            this.tpNotification.TabIndex = 3;
+            this.tpNotification.Text = "tabPage4";
+            this.tpNotification.UseVisualStyleBackColor = true;
+            // 
+            // ucNotification1
+            // 
+            this.ucNotification1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucNotification1.BackgroundImage")));
+            this.ucNotification1.Location = new System.Drawing.Point(0, 0);
+            this.ucNotification1.Name = "ucNotification1";
+            this.ucNotification1.Size = new System.Drawing.Size(980, 800);
+            this.ucNotification1.TabIndex = 0;
+            // 
+            // tpAccountSetting
+            // 
+            this.tpAccountSetting.Controls.Add(this.ucAccount1);
+            this.tpAccountSetting.Location = new System.Drawing.Point(4, 4);
+            this.tpAccountSetting.Name = "tpAccountSetting";
+            this.tpAccountSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tpAccountSetting.Size = new System.Drawing.Size(972, 791);
+            this.tpAccountSetting.TabIndex = 4;
+            this.tpAccountSetting.Text = "tabPage5";
+            this.tpAccountSetting.UseVisualStyleBackColor = true;
             // 
             // ucAccount1
             // 
             this.ucAccount1.BackColor = System.Drawing.Color.White;
-            this.ucAccount1.Location = new System.Drawing.Point(-4, -1);
-            this.ucAccount1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucAccount1.Location = new System.Drawing.Point(0, 0);
+            this.ucAccount1.Margin = new System.Windows.Forms.Padding(2);
             this.ucAccount1.Name = "ucAccount1";
             this.ucAccount1.Size = new System.Drawing.Size(980, 800);
             this.ucAccount1.TabIndex = 0;
+            this.ucAccount1.Load += new System.EventHandler(this.ucAccount1_Load);
             // 
             // ucMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.btnAccountSetting);
+            this.Controls.Add(this.tabMainMenu);
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucMainMenu";
-            this.Size = new System.Drawing.Size(1280, 805);
+            this.Size = new System.Drawing.Size(1280, 857);
             this.Load += new System.EventHandler(this.ucMainMenu_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAvatar)).EndInit();
-            this.tabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
+            this.tabMainMenu.ResumeLayout(false);
+            this.tpJobList.ResumeLayout(false);
+            this.tpWorkerList.ResumeLayout(false);
+            this.tpNotification.ResumeLayout(false);
+            this.tpAccountSetting.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -962,13 +986,15 @@
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAccountSetting;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnTurnOff;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLogout;
-        private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabControl tabMainMenu;
+        private System.Windows.Forms.TabPage tpJobList;
+        private System.Windows.Forms.TabPage tpWorkerList;
         private ucJobList ucJobList1;
+        private ucWorkerList ucWorkerList1;
+        private System.Windows.Forms.TabPage tpOngoingWork;
+        private System.Windows.Forms.TabPage tpNotification;
+        private ucNotification ucNotification1;
+        private System.Windows.Forms.TabPage tpAccountSetting;
         private ucAccount ucAccount1;
     }
 }

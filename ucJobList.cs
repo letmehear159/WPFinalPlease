@@ -36,5 +36,10 @@ namespace WPFinalPlease
         {
 
         }
+
+        private void ucJobList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

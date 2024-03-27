@@ -40,12 +40,12 @@
             this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuDropdown3 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucJobCard1 = new WPFinalPlease.ucJobCard();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.ucJobCard1 = new WPFinalPlease.ucJobCard();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,9 +83,10 @@
             this.bunifuDropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
             this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(509, 19);
+            this.bunifuDropdown1.Location = new System.Drawing.Point(382, 15);
+            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(120, 32);
+            this.bunifuDropdown1.Size = new System.Drawing.Size(91, 32);
             this.bunifuDropdown1.TabIndex = 3;
             this.bunifuDropdown1.Text = null;
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -125,9 +126,10 @@
             this.bunifuDropdown2.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdown2.ItemHighLightForeColor = System.Drawing.Color.White;
             this.bunifuDropdown2.ItemTopMargin = 3;
-            this.bunifuDropdown2.Location = new System.Drawing.Point(665, 19);
+            this.bunifuDropdown2.Location = new System.Drawing.Point(499, 15);
+            this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.Size = new System.Drawing.Size(120, 32);
+            this.bunifuDropdown2.Size = new System.Drawing.Size(91, 32);
             this.bunifuDropdown2.TabIndex = 4;
             this.bunifuDropdown2.Text = null;
             this.bunifuDropdown2.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -167,9 +169,10 @@
             this.bunifuDropdown3.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdown3.ItemHighLightForeColor = System.Drawing.Color.White;
             this.bunifuDropdown3.ItemTopMargin = 3;
-            this.bunifuDropdown3.Location = new System.Drawing.Point(820, 19);
+            this.bunifuDropdown3.Location = new System.Drawing.Point(615, 15);
+            this.bunifuDropdown3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.Size = new System.Drawing.Size(120, 32);
+            this.bunifuDropdown3.Size = new System.Drawing.Size(91, 32);
             this.bunifuDropdown3.TabIndex = 5;
             this.bunifuDropdown3.Text = null;
             this.bunifuDropdown3.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -180,18 +183,11 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(224)))), ((int)(((byte)(251)))));
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.ucJobCard1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(34, 70);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 57);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(906, 660);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(680, 537);
             this.flowLayoutPanel1.TabIndex = 8;
-            // 
-            // ucJobCard1
-            // 
-            this.ucJobCard1.BackColor = System.Drawing.Color.White;
-            this.ucJobCard1.Location = new System.Drawing.Point(3, 3);
-            this.ucJobCard1.Name = "ucJobCard1";
-            this.ucJobCard1.Size = new System.Drawing.Size(290, 210);
-            this.ucJobCard1.TabIndex = 0;
             // 
             // bunifuVScrollBar1
             // 
@@ -213,8 +209,7 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(937, 70);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(703, 57);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -225,11 +220,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(224)))), ((int)(((byte)(251)))));
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(224)))), ((int)(((byte)(251)))));
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(19, 660);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(15, 537);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 7;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 65;
+            this.bunifuVScrollBar1.ThumbLength = 52;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -281,7 +276,8 @@
             this.bunifuButton1.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_search_100;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(267, 19);
+            this.bunifuButton1.Location = new System.Drawing.Point(200, 15);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 25;
@@ -315,7 +311,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(61, 32);
+            this.bunifuButton1.Size = new System.Drawing.Size(46, 26);
             this.bunifuButton1.TabIndex = 2;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -351,7 +347,8 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(31, 19);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(23, 15);
+            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -377,7 +374,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox1.PlaceholderText = "Find Job...";
@@ -387,7 +384,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(230, 32);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(172, 26);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 0;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -446,7 +443,8 @@
             this.bunifuButton2.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_plus_100;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(906, 736);
+            this.bunifuButton2.Location = new System.Drawing.Point(680, 598);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 25;
@@ -480,7 +478,7 @@
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(50, 40);
+            this.bunifuButton2.Size = new System.Drawing.Size(38, 32);
             this.bunifuButton2.TabIndex = 12;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -536,7 +534,8 @@
             this.bunifuButton3.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_refresh_90;
             this.bunifuButton3.IdleIconRightImage = null;
             this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(850, 736);
+            this.bunifuButton3.Location = new System.Drawing.Point(638, 598);
+            this.bunifuButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton3.Name = "bunifuButton3";
             this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.OnDisabledState.BorderRadius = 25;
@@ -570,7 +569,7 @@
             this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton3.OnPressedState.IconLeftImage = null;
             this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(50, 40);
+            this.bunifuButton3.Size = new System.Drawing.Size(38, 32);
             this.bunifuButton3.TabIndex = 13;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -579,9 +578,18 @@
             this.bunifuButton3.UseDefaultRadiusAndThickness = true;
             this.bunifuButton3.Click += new System.EventHandler(this.bunifuButton3_Click);
             // 
+            // ucJobCard1
+            // 
+            this.ucJobCard1.BackColor = System.Drawing.Color.White;
+            this.ucJobCard1.Location = new System.Drawing.Point(2, 2);
+            this.ucJobCard1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucJobCard1.Name = "ucJobCard1";
+            this.ucJobCard1.Size = new System.Drawing.Size(218, 171);
+            this.ucJobCard1.TabIndex = 0;
+            // 
             // ucJobList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuButton3);
             this.Controls.Add(this.bunifuButton2);
@@ -592,8 +600,10 @@
             this.Controls.Add(this.bunifuDropdown1);
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.bunifuTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ucJobList";
             this.Size = new System.Drawing.Size(980, 800);
+            this.Load += new System.EventHandler(this.ucJobList_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

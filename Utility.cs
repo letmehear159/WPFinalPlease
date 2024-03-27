@@ -9,7 +9,14 @@ namespace WPFinalPlease
 {
     internal class Utility
     {
-        public static bool CheckNullInfoCustomer(Worker p)
+        public static bool checkValidPersonal(Account account)
+        {
+            if (string.IsNullOrEmpty((account.getCCCD()))){
+                return false; 
+            }
+            return true;
+        }
+        public static bool CheckNullInfoCustomer(Person p)
         {
             if (string.IsNullOrEmpty(p.GetName()) || string.IsNullOrEmpty(p.GetGender()) || string.IsNullOrEmpty(p.GetAddress()) || 
                 string.IsNullOrEmpty(p.GetCCCD()) || string.IsNullOrEmpty(p.GetPhone()) || string.IsNullOrEmpty(p.GetEmail()) ||
@@ -21,16 +28,18 @@ namespace WPFinalPlease
         }
         public static bool CheckNullInfoWorker(Worker p)
         {
-            if (string.IsNullOrEmpty(p.GetName()) || string.IsNullOrEmpty(p.GetGender()) || string.IsNullOrEmpty(p.GetAddress()) ||
-                string.IsNullOrEmpty(p.GetCCCD()) || string.IsNullOrEmpty(p.GetPhone()) || string.IsNullOrEmpty(p.GetEmail()) ||
-                string.IsNullOrEmpty(p.GetOccupation()) || string.IsNullOrEmpty(p.GetCertificate()) || p.GetExperiencedYear() < 0 ||
-                p.GetExpectedPrice() < 0 || p == null)
+            if (!CheckAccountInfoCustomer(p))
+            {
+                return false;
+            }
+            if (string.IsNullOrEmpty(p.GetOccupation()) || string.IsNullOrEmpty(p.GetCertificate()) || p.GetExperiencedYear() < 0 ||
+                p.GetExpectedPrice() < 0)
             {
                 return false;
             }
             return true;
         }
-        public static bool ValidateName(Worker p)
+        public static bool ValidateName(Person p)
         {
             for (int i = 0; i < p.GetName().Length; i++)
             {
@@ -41,7 +50,7 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool ValidateCCCD(Worker p)
+        public static bool ValidateCCCD(Person p)
         {
             for (int i = 0; i < p.GetCCCD().Length; i++)
             {
@@ -52,7 +61,7 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool ValidatePhone(Worker p)
+        public static bool ValidatePhone(Person p)
         {
             for (int i = 0; i < p.GetPhone().Length; i++)
             {
@@ -71,7 +80,7 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool ValidateEmail(Worker p)
+        public static bool ValidateEmail(Person p)
         {
             if (!p.GetEmail().Contains("@"))
             {
@@ -108,7 +117,24 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool ValidateBirth(Worker p)
+        public static void fillInformationAccountForWorker(Worker worker,ucAccount ucAccount)
+        {
+            ucAccount.drdOccupation.SelectedItem = worker.GetOccupation();
+            ucAccount.drdCertificate.SelectedItem = worker.GetCertificate();
+            ucAccount.txtExperience.Text=worker.GetExperiencedYear().ToString();
+            ucAccount.txtSalary.Text=worker.GetExpectedPrice().ToString();
+        }
+        public static void fillInformationAccountForUser(Person p,ucAccount ucAccount)
+        {
+            ucAccount.txtAddress.Text=p.GetAddress();
+            ucAccount.txtCCCD.Text=p.GetCCCD();
+            ucAccount.txtEmail.Text=p.GetEmail();
+            ucAccount.txtGender.Text=p.GetGender();
+            ucAccount.txtName.Text=p.GetName();
+            ucAccount.txtPhone.Text=p.GetPhone();
+            ucAccount.dtpBirthdate.Value = p.GetBirth();
+        }
+        public static bool ValidateBirth(Person p)
         {
             int age = DateTime.Now.Year - p.GetBirth().Year;
             if (age < 17)
@@ -117,7 +143,7 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool CheckAccountInfoCustomer(Worker p)
+        public static bool CheckAccountInfoCustomer(Person p)
         {
             if (!CheckNullInfoCustomer(p))
             {

@@ -59,6 +59,11 @@ namespace WPFinalPlease
            return dBconnection.executeNoMessage(sqlStr);
           
         }
+        public void addCCCDToAccount(string username,string cccd)
+        {
+            string sqlStr=string.Format("Update account set cccd='{0}' where username = '{1}'",cccd,username); 
+            dBconnection.execute(sqlStr);
+        }
       
         public Account getAccountFromLogin(string username,string password)
         {
@@ -72,7 +77,7 @@ namespace WPFinalPlease
             string CCCD= getAccount["CCCD"].ToString();
             string role= getAccount["role"].ToString();
             string email= getAccount["email"].ToString();
-            Account newAccount = new Account(username,password,CCCD,role,email);
+            Account newAccount = new Account(username,password,role, CCCD, email);
             return newAccount;
             //Trả về newAccount chứa giá trị của user này 
         }
