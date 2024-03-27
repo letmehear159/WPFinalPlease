@@ -48,17 +48,18 @@ namespace WPFinalPlease
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
             // Tạo một thể hiện mới của ucJobList
-            ucJobList newJobList = new ucJobList();
+            //ucJobList newJobList = new ucJobList();
 
             // Thêm ucJobList mới vào Controls của Form
-            this.Controls.Add(newJobList);
+            //this.Controls.Add(newJobList);
 
             // Cài đặt vị trí và kích thước cho ucJobList mới
-            newJobList.Location = new Point(220, 0);
-            newJobList.Size = new Size(980, 800);
+            //newJobList.Location = new Point(220, 0);
+            //newJobList.Size = new Size(980, 800);
 
             // Hiển thị ucJobList mới
-            newJobList.Show();
+            //newJobList.Show();
+            tabControl.SelectTab(0);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -86,6 +87,8 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
+         tabControl.SelectTab(1);
+
         }
 
         private void btnOngoingWork_Click(object sender, EventArgs e)
@@ -95,6 +98,7 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
+            tabControl.SelectTab(2);
         }
 
         private void btnNotification_Click(object sender, EventArgs e)
@@ -104,11 +108,12 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
+            tabControl.SelectTab(3);
         }
 
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
-
+            tabControl.SelectTab(4);
         }
     }
 }
