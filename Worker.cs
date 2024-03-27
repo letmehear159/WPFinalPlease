@@ -18,10 +18,10 @@ namespace WPFinalPlease
         private string skills;
         private string bio;
 
-        public Worker(string name, string cccd, string address, string gender, string phone, string email,
+        public Worker(string name, string cccd, string address, string gender, string phone, string email, DateTime birth,
             string occupation, int experiencedYear, float expectedPrice, string certificate, float starRate,
             int reviewAmount, string skills, string bio
-            ) : base(name, cccd, address, gender, phone, email)
+            ) : base(name, cccd, address, gender, phone, email, birth)
         {
             this.occupation = occupation;
             this.experiencedYear = experiencedYear;

@@ -14,7 +14,8 @@ namespace WPFinalPlease
         protected string gender;
         protected string phone;
         protected string email;
-        public Person(string name, string cccd, string address, string gender, string phone, string email)
+        protected DateTime birth;
+        public Person(string name, string cccd, string address, string gender, string phone, string email, DateTime birth)
         {
             this.name = name;
             this.cccd = cccd;
@@ -22,6 +23,7 @@ namespace WPFinalPlease
             this.gender = gender;
             this.phone = phone;
             this.email = email;
+            this.birth = birth;
         }
 
         // Get methods for each protected property
@@ -53,6 +55,11 @@ namespace WPFinalPlease
         public string GetEmail()
         {
             return email;
+        }
+
+        public DateTime GetBirth()
+        {
+            return birth;
         }
     }
 }
