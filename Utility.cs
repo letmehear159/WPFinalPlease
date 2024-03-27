@@ -9,11 +9,22 @@ namespace WPFinalPlease
 {
     internal class Utility
     {
-        public static bool CheckNullInfo(Worker p)
+        public static bool CheckNullInfoCustomer(Worker p)
         {
             if (string.IsNullOrEmpty(p.GetName()) || string.IsNullOrEmpty(p.GetGender()) || string.IsNullOrEmpty(p.GetAddress()) || 
                 string.IsNullOrEmpty(p.GetCCCD()) || string.IsNullOrEmpty(p.GetPhone()) || string.IsNullOrEmpty(p.GetEmail()) ||
                 p == null)
+            {
+                return false;
+            }
+            return true;
+        }
+        public static bool CheckNullInfoWorker(Worker p)
+        {
+            if (string.IsNullOrEmpty(p.GetName()) || string.IsNullOrEmpty(p.GetGender()) || string.IsNullOrEmpty(p.GetAddress()) ||
+                string.IsNullOrEmpty(p.GetCCCD()) || string.IsNullOrEmpty(p.GetPhone()) || string.IsNullOrEmpty(p.GetEmail()) ||
+                string.IsNullOrEmpty(p.GetOccupation()) || string.IsNullOrEmpty(p.GetCertificate()) || p.GetExperiencedYear() < 0 ||
+                p.GetExpectedPrice() < 0 || p == null)
             {
                 return false;
             }
@@ -106,9 +117,9 @@ namespace WPFinalPlease
             }
             return true;
         }
-        public static bool CheckAccountInfo(Worker p)
+        public static bool CheckAccountInfoCustomer(Worker p)
         {
-            if (!CheckNullInfo(p))
+            if (!CheckNullInfoCustomer(p))
             {
                 MessageBox.Show("Please fill in all information!");
                 return false;

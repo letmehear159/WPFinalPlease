@@ -13,7 +13,7 @@ namespace WPFinalPlease
     internal class DBconnection
     {
         SqlConnection conn = new
-SqlConnection(Properties.Settings.Default.connStr);
+SqlConnection(Properties.Settings.Default.conStr);
         public Account checkAccount( string sqlStr)
         {
             try
