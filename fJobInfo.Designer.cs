@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fJobInfo));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -56,7 +56,7 @@
             this.bunifuLabel13.CursorType = null;
             this.bunifuLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel13.Location = new System.Drawing.Point(92, 145);
-            this.bunifuLabel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel13.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel13.Size = new System.Drawing.Size(67, 15);
@@ -72,7 +72,7 @@
             this.bunifuLabel12.CursorType = null;
             this.bunifuLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel12.Location = new System.Drawing.Point(92, 124);
-            this.bunifuLabel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel12.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel12.Size = new System.Drawing.Size(67, 15);
@@ -88,7 +88,7 @@
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel11.Location = new System.Drawing.Point(92, 102);
-            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel11.Size = new System.Drawing.Size(67, 15);
@@ -104,7 +104,7 @@
             this.bunifuLabel10.CursorType = null;
             this.bunifuLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel10.Location = new System.Drawing.Point(92, 81);
-            this.bunifuLabel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel10.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel10.Size = new System.Drawing.Size(67, 15);
@@ -120,7 +120,7 @@
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel9.Location = new System.Drawing.Point(92, 60);
-            this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(67, 15);
@@ -136,7 +136,7 @@
             this.lblTitle.CursorType = null;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblTitle.Location = new System.Drawing.Point(92, 39);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTitle.Size = new System.Drawing.Size(67, 15);
@@ -153,7 +153,7 @@
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel7.Location = new System.Drawing.Point(11, 145);
-            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(64, 15);
@@ -170,7 +170,7 @@
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel6.Location = new System.Drawing.Point(11, 124);
-            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(29, 15);
@@ -187,7 +187,7 @@
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel5.Location = new System.Drawing.Point(11, 102);
-            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(35, 15);
@@ -204,7 +204,7 @@
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel4.Location = new System.Drawing.Point(11, 81);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(23, 15);
@@ -221,7 +221,7 @@
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(11, 60);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(44, 15);
@@ -238,7 +238,7 @@
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel2.Location = new System.Drawing.Point(11, 39);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(25, 15);
@@ -255,7 +255,7 @@
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.bunifuLabel1.Location = new System.Drawing.Point(106, 10);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(95, 23);
@@ -298,11 +298,11 @@
             this.btnReturn.ColorContrastOnClick = 45;
             this.btnReturn.ColorContrastOnHover = 45;
             this.btnReturn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnReturn.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnReturn.CustomizableEdges = borderEdges7;
             this.btnReturn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnReturn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReturn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -327,7 +327,7 @@
             this.btnReturn.IdleIconRightImage = null;
             this.btnReturn.IndicateFocus = false;
             this.btnReturn.Location = new System.Drawing.Point(68, 197);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReturn.OnDisabledState.BorderRadius = 1;
@@ -388,11 +388,11 @@
             this.btnAccept.ColorContrastOnClick = 45;
             this.btnAccept.ColorContrastOnHover = 45;
             this.btnAccept.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnAccept.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnAccept.CustomizableEdges = borderEdges8;
             this.btnAccept.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAccept.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAccept.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -417,7 +417,7 @@
             this.btnAccept.IdleIconRightImage = null;
             this.btnAccept.IndicateFocus = false;
             this.btnAccept.Location = new System.Drawing.Point(154, 197);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAccept.OnDisabledState.BorderRadius = 1;
@@ -480,7 +480,7 @@
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuLabel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fJobInfo";
             this.Text = "fJobInfo";
             this.ResumeLayout(false);

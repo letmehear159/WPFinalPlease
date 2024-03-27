@@ -14,7 +14,7 @@ namespace WPFinalPlease
     public partial class ucAccount : UserControl
     {
         PersonDao personDao = new PersonDao();
-        public Account account;
+        public Account account=new Account();
         private AccountDao accountDao = new AccountDao();
         WorkerDao workerDao = new WorkerDao();
         public ucAccount()
@@ -67,7 +67,6 @@ namespace WPFinalPlease
             float expectedSalary = float.Parse(txtSalary.Text);
             Worker worker = new Worker(occupation, experience, expectedSalary, certificate);
             workerDao.changeFromUserToWorker(worker, account.getCCCD());
-
         }
 
         private void ucAccount_Load_1(object sender, EventArgs e)
@@ -76,18 +75,22 @@ namespace WPFinalPlease
             {
                 return;
             }
-            if (account.getRole() == "User")
-            {
-                drdOccupation.SelectedIndex = 0;
-                drdCertificate.SelectedIndex = 0;
-            }
             else
             {
-                Worker worker = workerDao.getInformationFromCCCD(account.getCCCD());
-                Utility.fillInformationAccountForWorker(worker, this);
+                if (account.getRole() == "User")
+                {
+                    drdOccupation.SelectedIndex = 0;
+                    drdCertificate.SelectedIndex = 0;
+                }
+                else
+                {
+                    Worker worker = workerDao.getInformationFromCCCD(account.getCCCD());
+                    Utility.fillInformationAccountForWorker(worker, this);
+                }
+                Person person = personDao.getInformationFromCCCD(account.getCCCD());
+                Utility.fillInformationAccountForUser(person, this);
             }
-            Person person = personDao.getInformationFromCCCD(account.getCCCD());
-            Utility.fillInformationAccountForUser(person, this);
+            
         }
     }
 }

@@ -938,7 +938,7 @@
             this.tpAccountSetting.Padding = new System.Windows.Forms.Padding(3);
             this.tpAccountSetting.Size = new System.Drawing.Size(972, 791);
             this.tpAccountSetting.TabIndex = 4;
-            this.tpAccountSetting.Text = "tabPage5";
+            this.tpAccountSetting.Text = "tabPage1";
             this.tpAccountSetting.UseVisualStyleBackColor = true;
             // 
             // ucAccount1
@@ -949,7 +949,6 @@
             this.ucAccount1.Name = "ucAccount1";
             this.ucAccount1.Size = new System.Drawing.Size(980, 800);
             this.ucAccount1.TabIndex = 0;
-            this.ucAccount1.Load += new System.EventHandler(this.ucAccount1_Load);
             // 
             // ucMainMenu
             // 
