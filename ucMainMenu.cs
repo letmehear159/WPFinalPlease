@@ -15,8 +15,10 @@ namespace WPFinalPlease
         //These event is used when turn off button clicked, to active specific function
         public event EventHandler turnOff;
         public event EventHandler logOut;
+
         //Store the user information passed from login
         private Account account;
+        private AccountDao accountDao=new AccountDao();
         public ucMainMenu()
         {
             InitializeComponent();
@@ -28,20 +30,11 @@ namespace WPFinalPlease
         }
        
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
+       
+       
+      
 
-        }
-
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
        
 
@@ -59,7 +52,7 @@ namespace WPFinalPlease
 
             // Hiển thị ucJobList mới
             //newJobList.Show();
-            tabControl.SelectTab(0);
+            tabMainMenu.SelectTab(0);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -69,6 +62,7 @@ namespace WPFinalPlease
             //When loggout to loggin form then hide this uc
             this.Hide();
         }
+
         private void btnTurnOff_Click(object sender, EventArgs e)
         {
             //Thông báo message yes no turn off 
@@ -87,7 +81,7 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-         tabControl.SelectTab(1);
+         tabMainMenu.SelectTab(1);
 
         }
 
@@ -98,7 +92,7 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-            tabControl.SelectTab(2);
+            tabMainMenu.SelectTab(2);
         }
 
         private void btnNotification_Click(object sender, EventArgs e)
@@ -108,12 +102,23 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-            tabControl.SelectTab(3);
+            tabMainMenu.SelectTab(3);
         }
 
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
-            tabControl.SelectTab(4);
+            tabMainMenu.SelectTab(4);
+
+        }
+
+        private void ucAccount1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucJobList1_Load(object sender, EventArgs e)
+        {
+            ucAccount1.account = this.account;
         }
     }
 }

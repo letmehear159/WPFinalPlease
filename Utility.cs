@@ -117,6 +117,23 @@ namespace WPFinalPlease
             }
             return true;
         }
+        public static void fillInformationAccountForWorker(Worker worker,ucAccount ucAccount)
+        {
+            ucAccount.drdOccupation.SelectedItem = worker.GetOccupation();
+            ucAccount.drdCertificate.SelectedItem = worker.GetCertificate();
+            ucAccount.txtExperience.Text=worker.GetExperiencedYear().ToString();
+            ucAccount.txtSalary.Text=worker.GetExpectedPrice().ToString();
+        }
+        public static void fillInformationAccountForUser(Person p,ucAccount ucAccount)
+        {
+            ucAccount.txtAddress.Text=p.GetAddress();
+            ucAccount.txtCCCD.Text=p.GetCCCD();
+            ucAccount.txtEmail.Text=p.GetEmail();
+            ucAccount.txtGender.Text=p.GetGender();
+            ucAccount.txtName.Text=p.GetName();
+            ucAccount.txtPhone.Text=p.GetPhone();
+            ucAccount.dtpBirthdate.Value = p.GetBirth();
+        }
         public static bool ValidateBirth(Person p)
         {
             int age = DateTime.Now.Year - p.GetBirth().Year;

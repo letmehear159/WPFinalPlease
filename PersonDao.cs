@@ -16,8 +16,22 @@ namespace WPFinalPlease
         public void addPersonalInformationCustome(Person person)
         {
             string sqlStr = string.Format("Insert into worker (name,gender,cccd,address,phone,email,birthdate) values" +
-                "'{0}','{1}','{2}','{3}','{4}','{5}',{6}'", person.GetName(), person.GetGender(), person.GetCCCD(),
+                " ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", person.GetName(), person.GetGender(), person.GetCCCD(),
                   person.GetAddress(), person.GetPhone(), person.GetEmail(), person.GetBirth());
+            dBconnection.execute(sqlStr);
+        }
+        public Person getInformationFromCCCD(string ccCD)
+        {
+            string sqlStr = string.Format("Select * from worker where cccd = '{0}'", ccCD);
+            //Nhớ kiểm tra thằng này null hay không 
+            return dBconnection.GetPerson(sqlStr);
+        }
+        public void adjustInformation(Person person,string oldCCCD)
+        {
+            string sqlStr = string.Format("UPDATE worker SET Name = '{0}', Address = '{1}', Birthdate='{2}'" +
+                     ", Phone='{3}', Email='{4}', gender='{5}', cccd='{6}' WHERE cccd = '{7}'",person.GetName(),
+                     person.GetAddress(),person.GetBirth(),person.GetPhone(),person.GetEmail(),person.GetGender()
+                     ,person.GetCCCD(),oldCCCD);
             dBconnection.execute(sqlStr);
         }
 
