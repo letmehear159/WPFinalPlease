@@ -73,5 +73,42 @@ namespace WPFinalPlease
             //Thông báo message yes no turn off 
             turnOff?.Invoke(this, EventArgs.Empty);
         }
+
+        private void ucMainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorkerList_Click(object sender, EventArgs e)
+        {
+            if (!Utility.checkValidPersonal(account))
+            {
+                MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
+                return;
+            }
+        }
+
+        private void btnOngoingWork_Click(object sender, EventArgs e)
+        {
+            if (!Utility.checkValidPersonal(account))
+            {
+                MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
+                return;
+            }
+        }
+
+        private void btnNotification_Click(object sender, EventArgs e)
+        {
+            if (!Utility.checkValidPersonal(account))
+            {
+                MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
+                return;
+            }
+        }
+
+        private void btnAccountSetting_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

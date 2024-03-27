@@ -9,6 +9,13 @@ namespace WPFinalPlease
 {
     internal class Utility
     {
+        public static bool checkValidPersonal(Account account)
+        {
+            if (string.IsNullOrEmpty((account.getCCCD()))){
+                return false; 
+            }
+            return true;
+        }
         public static bool CheckNullInfo(Worker p)
         {
             if (string.IsNullOrEmpty(p.GetName()) || string.IsNullOrEmpty(p.GetGender()) || string.IsNullOrEmpty(p.GetAddress()) || 
@@ -106,6 +113,7 @@ namespace WPFinalPlease
             }
             return true;
         }
+
         public static bool CheckAccountInfo(Worker p)
         {
             if (!CheckNullInfo(p))

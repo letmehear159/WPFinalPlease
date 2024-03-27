@@ -142,6 +142,7 @@
             this.btnAccountSetting.TextMarginLeft = 0;
             this.btnAccountSetting.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAccountSetting.UseDefaultRadiusAndThickness = true;
+            this.btnAccountSetting.Click += new System.EventHandler(this.btnAccountSetting_Click);
             // 
             // bunifuPanel1
             // 
@@ -459,6 +460,7 @@
             this.btnNotification.TextMarginLeft = 0;
             this.btnNotification.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNotification.UseDefaultRadiusAndThickness = true;
+            this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
             // 
             // btnOngoingWork
             // 
@@ -549,6 +551,7 @@
             this.btnOngoingWork.TextMarginLeft = 0;
             this.btnOngoingWork.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnOngoingWork.UseDefaultRadiusAndThickness = true;
+            this.btnOngoingWork.Click += new System.EventHandler(this.btnOngoingWork_Click);
             // 
             // btnWorkerList
             // 
@@ -639,6 +642,7 @@
             this.btnWorkerList.TextMarginLeft = 0;
             this.btnWorkerList.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnWorkerList.UseDefaultRadiusAndThickness = true;
+            this.btnWorkerList.Click += new System.EventHandler(this.btnWorkerList_Click);
             // 
             // btnJobList
             // 
@@ -839,6 +843,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucMainMenu";
             this.Size = new System.Drawing.Size(960, 654);
+            this.Load += new System.EventHandler(this.ucMainMenu_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAvatar)).EndInit();

@@ -131,7 +131,7 @@
             this.txtName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.Lines = new string[0];
             this.txtName.Location = new System.Drawing.Point(75, 41);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.MaxLength = 32767;
             this.txtName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtName.Modified = false;
@@ -157,7 +157,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtName.OnIdleState = stateProperties4;
-            this.txtName.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Padding = new System.Windows.Forms.Padding(2);
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtName.PlaceholderText = "";
@@ -177,6 +177,7 @@
             this.txtName.TextPlaceholder = "";
             this.txtName.UseSystemPasswordChar = false;
             this.txtName.WordWrap = true;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtSalary
             // 
@@ -207,7 +208,7 @@
             this.txtSalary.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalary.Lines = new string[0];
             this.txtSalary.Location = new System.Drawing.Point(412, 528);
-            this.txtSalary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSalary.Margin = new System.Windows.Forms.Padding(2);
             this.txtSalary.MaxLength = 32767;
             this.txtSalary.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtSalary.Modified = false;
@@ -233,7 +234,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtSalary.OnIdleState = stateProperties8;
-            this.txtSalary.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSalary.Padding = new System.Windows.Forms.Padding(2);
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtSalary.PlaceholderText = "";
@@ -283,7 +284,7 @@
             this.txtExperience.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtExperience.Lines = new string[0];
             this.txtExperience.Location = new System.Drawing.Point(412, 447);
-            this.txtExperience.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExperience.Margin = new System.Windows.Forms.Padding(2);
             this.txtExperience.MaxLength = 32767;
             this.txtExperience.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtExperience.Modified = false;
@@ -309,7 +310,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtExperience.OnIdleState = stateProperties12;
-            this.txtExperience.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExperience.Padding = new System.Windows.Forms.Padding(2);
             this.txtExperience.PasswordChar = '\0';
             this.txtExperience.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtExperience.PlaceholderText = "";
@@ -359,7 +360,7 @@
             this.txtEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Lines = new string[0];
             this.txtEmail.Location = new System.Drawing.Point(75, 528);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmail.Modified = false;
@@ -385,7 +386,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEmail.OnIdleState = stateProperties16;
-            this.txtEmail.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(2);
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEmail.PlaceholderText = "";
@@ -434,8 +435,8 @@
             this.txtPhone.IconRight = null;
             this.txtPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(75, 447);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Location = new System.Drawing.Point(75, 448);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPhone.Modified = false;
@@ -461,7 +462,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPhone.OnIdleState = stateProperties20;
-            this.txtPhone.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(2);
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPhone.PlaceholderText = "";
@@ -511,7 +512,7 @@
             this.txtAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.Lines = new string[0];
             this.txtAddress.Location = new System.Drawing.Point(75, 366);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtAddress.Modified = false;
@@ -537,7 +538,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtAddress.OnIdleState = stateProperties24;
-            this.txtAddress.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Padding = new System.Windows.Forms.Padding(2);
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAddress.PlaceholderText = "";
@@ -587,7 +588,7 @@
             this.txtCCCD.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCCCD.Lines = new string[0];
             this.txtCCCD.Location = new System.Drawing.Point(75, 284);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCD.MaxLength = 32767;
             this.txtCCCD.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCCCD.Modified = false;
@@ -613,7 +614,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCCCD.OnIdleState = stateProperties28;
-            this.txtCCCD.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCCD.Padding = new System.Windows.Forms.Padding(2);
             this.txtCCCD.PasswordChar = '\0';
             this.txtCCCD.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCCCD.PlaceholderText = "";
@@ -663,7 +664,7 @@
             this.txtGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGender.Lines = new string[0];
             this.txtGender.Location = new System.Drawing.Point(75, 122);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGender.Margin = new System.Windows.Forms.Padding(2);
             this.txtGender.MaxLength = 32767;
             this.txtGender.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtGender.Modified = false;
@@ -689,7 +690,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Black;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtGender.OnIdleState = stateProperties32;
-            this.txtGender.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGender.Padding = new System.Windows.Forms.Padding(2);
             this.txtGender.PasswordChar = '\0';
             this.txtGender.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtGender.PlaceholderText = "";
@@ -729,7 +730,7 @@
             this.dtpBirthdate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtpBirthdate.LeftTextMargin = 0;
             this.dtpBirthdate.Location = new System.Drawing.Point(79, 214);
-            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpBirthdate.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtpBirthdate.Name = "dtpBirthdate";
             this.dtpBirthdate.Size = new System.Drawing.Size(226, 32);
@@ -745,7 +746,7 @@
             this.pnBirthdate.BorderRadius = 10;
             this.pnBirthdate.BorderThickness = 1;
             this.pnBirthdate.Location = new System.Drawing.Point(75, 203);
-            this.pnBirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBirthdate.Margin = new System.Windows.Forms.Padding(2);
             this.pnBirthdate.Name = "pnBirthdate";
             this.pnBirthdate.ShowBorders = true;
             this.pnBirthdate.Size = new System.Drawing.Size(244, 41);
@@ -760,7 +761,7 @@
             this.lblGender.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblGender.ForeColor = System.Drawing.Color.Black;
             this.lblGender.Location = new System.Drawing.Point(86, 110);
-            this.lblGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(2);
             this.lblGender.Name = "lblGender";
             this.lblGender.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblGender.Size = new System.Drawing.Size(57, 20);
@@ -777,7 +778,7 @@
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblName.ForeColor = System.Drawing.Color.Black;
             this.lblName.Location = new System.Drawing.Point(86, 28);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2);
             this.lblName.Name = "lblName";
             this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblName.Size = new System.Drawing.Size(45, 20);
@@ -794,7 +795,7 @@
             this.lblBirthdate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblBirthdate.ForeColor = System.Drawing.Color.Black;
             this.lblBirthdate.Location = new System.Drawing.Point(86, 191);
-            this.lblBirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblBirthdate.Margin = new System.Windows.Forms.Padding(2);
             this.lblBirthdate.Name = "lblBirthdate";
             this.lblBirthdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblBirthdate.Size = new System.Drawing.Size(73, 20);
@@ -811,7 +812,7 @@
             this.lblCCCD.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblCCCD.ForeColor = System.Drawing.Color.Black;
             this.lblCCCD.Location = new System.Drawing.Point(86, 272);
-            this.lblCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.lblCCCD.Name = "lblCCCD";
             this.lblCCCD.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCCCD.Size = new System.Drawing.Size(52, 20);
@@ -828,7 +829,7 @@
             this.lblAddress.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
             this.lblAddress.Location = new System.Drawing.Point(86, 353);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(2);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAddress.Size = new System.Drawing.Size(62, 20);
@@ -845,7 +846,7 @@
             this.lblPhone.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblPhone.ForeColor = System.Drawing.Color.Black;
             this.lblPhone.Location = new System.Drawing.Point(86, 435);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(2);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPhone.Size = new System.Drawing.Size(114, 20);
@@ -862,7 +863,7 @@
             this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
             this.lblEmail.Location = new System.Drawing.Point(86, 516);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblEmail.Size = new System.Drawing.Size(45, 20);
@@ -879,7 +880,7 @@
             this.lblExperience.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblExperience.ForeColor = System.Drawing.Color.Black;
             this.lblExperience.Location = new System.Drawing.Point(424, 435);
-            this.lblExperience.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblExperience.Margin = new System.Windows.Forms.Padding(2);
             this.lblExperience.Name = "lblExperience";
             this.lblExperience.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblExperience.Size = new System.Drawing.Size(141, 20);
@@ -896,7 +897,7 @@
             this.lblSalary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblSalary.ForeColor = System.Drawing.Color.Black;
             this.lblSalary.Location = new System.Drawing.Point(424, 516);
-            this.lblSalary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSalary.Margin = new System.Windows.Forms.Padding(2);
             this.lblSalary.Name = "lblSalary";
             this.lblSalary.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblSalary.Size = new System.Drawing.Size(121, 20);
@@ -939,8 +940,8 @@
             this.drdCertificate.ItemHighLightColor = System.Drawing.Color.White;
             this.drdCertificate.ItemHighLightForeColor = System.Drawing.Color.Black;
             this.drdCertificate.ItemTopMargin = 3;
-            this.drdCertificate.Location = new System.Drawing.Point(2, 12);
-            this.drdCertificate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.drdCertificate.Location = new System.Drawing.Point(4, 7);
+            this.drdCertificate.Margin = new System.Windows.Forms.Padding(2);
             this.drdCertificate.Name = "drdCertificate";
             this.drdCertificate.Size = new System.Drawing.Size(240, 32);
             this.drdCertificate.TabIndex = 19;
@@ -983,7 +984,7 @@
             this.drdOccupation.ItemHighLightForeColor = System.Drawing.Color.Black;
             this.drdOccupation.ItemTopMargin = 3;
             this.drdOccupation.Location = new System.Drawing.Point(2, 12);
-            this.drdOccupation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.drdOccupation.Margin = new System.Windows.Forms.Padding(2);
             this.drdOccupation.Name = "drdOccupation";
             this.drdOccupation.Size = new System.Drawing.Size(240, 32);
             this.drdOccupation.TabIndex = 20;
@@ -1001,7 +1002,7 @@
             this.pnCertificate.BorderThickness = 1;
             this.pnCertificate.Controls.Add(this.drdCertificate);
             this.pnCertificate.Location = new System.Drawing.Point(412, 366);
-            this.pnCertificate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCertificate.Margin = new System.Windows.Forms.Padding(2);
             this.pnCertificate.Name = "pnCertificate";
             this.pnCertificate.ShowBorders = true;
             this.pnCertificate.Size = new System.Drawing.Size(244, 41);
@@ -1017,7 +1018,7 @@
             this.pnOccupation.BorderThickness = 1;
             this.pnOccupation.Controls.Add(this.drdOccupation);
             this.pnOccupation.Location = new System.Drawing.Point(412, 284);
-            this.pnOccupation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnOccupation.Margin = new System.Windows.Forms.Padding(2);
             this.pnOccupation.Name = "pnOccupation";
             this.pnOccupation.ShowBorders = true;
             this.pnOccupation.Size = new System.Drawing.Size(244, 41);
@@ -1031,7 +1032,7 @@
             this.lblOccupation.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblOccupation.ForeColor = System.Drawing.Color.Black;
             this.lblOccupation.Location = new System.Drawing.Point(424, 272);
-            this.lblOccupation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblOccupation.Margin = new System.Windows.Forms.Padding(2);
             this.lblOccupation.Name = "lblOccupation";
             this.lblOccupation.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblOccupation.Size = new System.Drawing.Size(90, 20);
@@ -1048,7 +1049,7 @@
             this.lblCertificate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblCertificate.ForeColor = System.Drawing.Color.Black;
             this.lblCertificate.Location = new System.Drawing.Point(424, 353);
-            this.lblCertificate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCertificate.Margin = new System.Windows.Forms.Padding(2);
             this.lblCertificate.Name = "lblCertificate";
             this.lblCertificate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCertificate.Size = new System.Drawing.Size(81, 20);
@@ -1065,7 +1066,7 @@
             this.lblBio.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblBio.ForeColor = System.Drawing.Color.Black;
             this.lblBio.Location = new System.Drawing.Point(424, 31);
-            this.lblBio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblBio.Margin = new System.Windows.Forms.Padding(2);
             this.lblBio.Name = "lblBio";
             this.lblBio.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblBio.Size = new System.Drawing.Size(27, 20);
@@ -1103,7 +1104,7 @@
             this.txtBio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBio.Lines = new string[0];
             this.txtBio.Location = new System.Drawing.Point(362, 41);
-            this.txtBio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBio.Margin = new System.Windows.Forms.Padding(2);
             this.txtBio.MaxLength = 32767;
             this.txtBio.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBio.Modified = false;
@@ -1129,7 +1130,7 @@
             stateProperties36.ForeColor = System.Drawing.Color.Black;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBio.OnIdleState = stateProperties36;
-            this.txtBio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBio.Padding = new System.Windows.Forms.Padding(2);
             this.txtBio.PasswordChar = '\0';
             this.txtBio.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBio.PlaceholderText = "";
@@ -1160,7 +1161,7 @@
             this.pnRegister.BorderThickness = 10;
             this.pnRegister.Controls.Add(this.btnRegister);
             this.pnRegister.Location = new System.Drawing.Point(362, 252);
-            this.pnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.pnRegister.Name = "pnRegister";
             this.pnRegister.ShowBorders = true;
             this.pnRegister.Size = new System.Drawing.Size(338, 456);
@@ -1214,7 +1215,7 @@
             this.btnRegister.IdleIconRightImage = null;
             this.btnRegister.IndicateFocus = false;
             this.btnRegister.Location = new System.Drawing.Point(50, 337);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRegister.OnDisabledState.BorderRadius = 30;
@@ -1304,7 +1305,7 @@
             this.btnChangeInfo.IdleIconRightImage = null;
             this.btnChangeInfo.IndicateFocus = false;
             this.btnChangeInfo.Location = new System.Drawing.Point(75, 589);
-            this.btnChangeInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangeInfo.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangeInfo.Name = "btnChangeInfo";
             this.btnChangeInfo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnChangeInfo.OnDisabledState.BorderRadius = 30;
@@ -1345,6 +1346,7 @@
             this.btnChangeInfo.TextMarginLeft = 0;
             this.btnChangeInfo.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnChangeInfo.UseDefaultRadiusAndThickness = true;
+            this.btnChangeInfo.Click += new System.EventHandler(this.btnChangeInfo_Click);
             // 
             // ucAccount
             // 
@@ -1372,13 +1374,13 @@
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtCCCD);
             this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtExperience);
             this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.pnRegister);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.txtPhone);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucAccount";
             this.Size = new System.Drawing.Size(735, 650);
             this.pnCertificate.ResumeLayout(false);
