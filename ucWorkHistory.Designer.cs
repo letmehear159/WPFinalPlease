@@ -59,9 +59,9 @@
             // pBoxWorkImage
             // 
             this.pBoxWorkImage.Image = global::WPFinalPlease.Properties.Resources.icons8_favorite_512px_4;
-            this.pBoxWorkImage.Location = new System.Drawing.Point(3, 3);
+            this.pBoxWorkImage.Location = new System.Drawing.Point(3, 6);
             this.pBoxWorkImage.Name = "pBoxWorkImage";
-            this.pBoxWorkImage.Size = new System.Drawing.Size(151, 94);
+            this.pBoxWorkImage.Size = new System.Drawing.Size(132, 94);
             this.pBoxWorkImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxWorkImage.TabIndex = 0;
             this.pBoxWorkImage.TabStop = false;
@@ -75,7 +75,7 @@
             this.bunifuSeparator2.LineColor = System.Drawing.Color.Black;
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 2;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 148);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 151);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator2.Size = new System.Drawing.Size(348, 10);
@@ -94,16 +94,15 @@
             this.tableLayoutPanel1.Controls.Add(this.lblProgress, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.bunifuLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblObjective, 1, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(160, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(141, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(190, 148);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(190, 151);
             this.tableLayoutPanel1.TabIndex = 4;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // bunifuLabel7
             // 
@@ -221,7 +220,6 @@
             this.lblObjective.Size = new System.Drawing.Size(99, 52);
             this.lblObjective.TabIndex = 8;
             this.lblObjective.Text = "ProgressProgressProgressProgressProgressProgressProgress";
-            this.lblObjective.Click += new System.EventHandler(this.label1_Click);
             // 
             // bunifuSeparator1
             // 
@@ -232,7 +230,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Black;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 2;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(242, -1);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(224, -1);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Vertical;
             this.bunifuSeparator1.Size = new System.Drawing.Size(1, 155);
@@ -258,9 +256,9 @@
             this.lblComment.AutoEllipsis = true;
             this.lblComment.AutoSize = true;
             this.lblComment.Location = new System.Drawing.Point(123, 161);
-            this.lblComment.MaximumSize = new System.Drawing.Size(220, 0);
+            this.lblComment.MaximumSize = new System.Drawing.Size(180, 0);
             this.lblComment.Name = "lblComment";
-            this.lblComment.Size = new System.Drawing.Size(219, 26);
+            this.lblComment.Size = new System.Drawing.Size(178, 26);
             this.lblComment.TabIndex = 10;
             this.lblComment.Text = "ProgressProgressProgressProgressProgressProgressProgress";
             // 
@@ -311,7 +309,7 @@
             this.btnInformation.IdleIconLeftImage = global::WPFinalPlease.Properties.Resources.icons8_info_512px;
             this.btnInformation.IdleIconRightImage = null;
             this.btnInformation.IndicateFocus = false;
-            this.btnInformation.Location = new System.Drawing.Point(302, 190);
+            this.btnInformation.Location = new System.Drawing.Point(280, 190);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnInformation.OnDisabledState.BorderRadius = 30;
@@ -366,8 +364,7 @@
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.pBoxWorkImage);
             this.Name = "ucWorkHistory";
-            this.Size = new System.Drawing.Size(348, 230);
-            this.Load += new System.EventHandler(this.ucWorkHistory_Load);
+            this.Size = new System.Drawing.Size(332, 230);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxWorkImage)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

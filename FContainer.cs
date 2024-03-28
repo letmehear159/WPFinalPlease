@@ -32,7 +32,6 @@ namespace WPFinalPlease
             //When this event executes, make it run other event from passed Function
             ucMainMenu.turnOff += turnOffForm;
             ucMainMenu.logOut += logOut;
-            
         }
         private void turnOffForm(object sender, EventArgs e)
         {

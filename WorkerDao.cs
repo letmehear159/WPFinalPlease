@@ -61,6 +61,13 @@ namespace WPFinalPlease
             return new Worker(name, cccd, address, gender, phone, email, birth, occupation, experience, expectedPrice, certificate, star
                 , review, skill, bio);
         }
+        public DataTable getWorkingHistory(string cccd)
+        {
+            string sqlCheck = string.Format("Select count(*) from WorkHistory where CCCD_Worker='{0}'", cccd);
+            string sqlStr = string.Format("Select * from workHistory where CCCD_Worker= '{0}'", cccd);
+            DataTable workingHistory = dBconnection.getWorkHistory(sqlStr, sqlCheck);
+            return workingHistory;
+        }
 
     }
 }

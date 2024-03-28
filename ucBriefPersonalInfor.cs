@@ -33,6 +33,7 @@ namespace WPFinalPlease
             lblExperience.Text = frow["Experience_Year"].ToString();
             lblStar.Text = frow["Star_rate"].ToString();
             lblCCCD.Text = frow["CCCD"].ToString() ;
+            lblName.Text = frow["Name"].ToString();
         }
 
         private void btnInformation_Click(object sender, EventArgs e)

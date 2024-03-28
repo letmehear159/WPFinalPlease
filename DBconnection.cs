@@ -21,6 +21,13 @@ SqlConnection(Properties.Settings.Default.connStr);
             if(value == null) return null;
             return value.Rows[0];
         }
+        public DataTable getWorkHistory(string sqlStr, string sqlCheckHas)
+        {
+            if (!isEmpty(sqlCheckHas)) return null;
+            DataTable value = load(sqlStr);
+            if (value == null) return null;
+            return value;
+        }
         public Account checkAccount( string sqlStr)
         {
             try
