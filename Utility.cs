@@ -123,6 +123,8 @@ namespace WPFinalPlease
             ucAccount.drdCertificate.SelectedItem = worker.GetCertificate();
             ucAccount.txtExperience.Text=worker.GetExperiencedYear().ToString();
             ucAccount.txtSalary.Text=worker.GetExpectedPrice().ToString();
+            ucAccount.txtSkill.Text=worker.GetSkills().ToString();   
+            ucAccount.tbBio.Text=worker.GetBio();
         }
         public static void fillInformationAccountForUser(Person p,ucAccount ucAccount)
         {
@@ -133,6 +135,11 @@ namespace WPFinalPlease
             ucAccount.txtName.Text=p.GetName();
             ucAccount.txtPhone.Text=p.GetPhone();
             ucAccount.dtpBirthdate.Value = p.GetBirth();
+        }
+        public static void fillInWorkerDetail(Worker worker,ucWorkerDetail ucWorker)
+        {
+            ucWorker.lblName.Text=worker.GetName();
+            ucWorker.lblAddress.Text=worker.GetAddress();
         }
         public static bool ValidateBirth(Person p)
         {

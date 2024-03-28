@@ -52,7 +52,9 @@ namespace WPFinalPlease
 
             // Hiển thị ucJobList mới
             //newJobList.Show();
-            tabMainMenu.SelectTab(0);
+            //tabMainMenu.SelectTab(0);
+            tabMainMenu.SelectedIndex = 0;
+            
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -71,7 +73,9 @@ namespace WPFinalPlease
 
         private void ucMainMenu_Load(object sender, EventArgs e)
         {
-
+            tabMainMenu.SelectedIndex = 0;
+            this.ucWorkerList1.ucMainMenu = this;
+            
         }
 
         private void btnWorkerList_Click(object sender, EventArgs e)
@@ -81,7 +85,10 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-         tabMainMenu.SelectTab(1);
+            tabMainMenu.SelectedIndex = 1;
+            //ucWorkerList ucWorkerList = new ucWorkerList();
+            //this.tpWorkerList. Controls.Add(ucWorkerList);
+          
 
         }
 
@@ -92,7 +99,10 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-            tabMainMenu.SelectTab(2);
+            tabMainMenu.SelectedIndex = 2;
+            //ucCreateJob ucCreateJob = new ucCreateJob();
+            //this.tpOngoingWork.  Controls.Add( ucCreateJob);
+
         }
 
         private void btnNotification_Click(object sender, EventArgs e)
@@ -102,23 +112,25 @@ namespace WPFinalPlease
                 MessageBox.Show("You haven't had enough personal information to continue. Please fill this in Account setting");
                 return;
             }
-            tabMainMenu.SelectTab(3);
+            tabMainMenu.SelectedIndex=3;
+            //ucNotification ucNotification = new ucNotification();
+            //this. tpNotification.Controls.Add(ucNotification);
+
         }
 
         private void btnAccountSetting_Click(object sender, EventArgs e)
         {
-            tabMainMenu.SelectTab(4);
+            tabMainMenu.SelectedIndex=4;
+            //ucAccount ucAccount = new ucAccount();
+            //this. tpAccountSetting.Controls.Add(ucAccount);
+
 
         }
-
-        private void ucAccount1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ucJobList1_Load(object sender, EventArgs e)
         {
             ucAccount1.account = this.account;
         }
+
+        
     }
 }

@@ -385,7 +385,7 @@
         ATUh/nj1W4WjAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton1.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnFavorite.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAOtxJREFUeF7t
         3Qm4JUV5/3FFXFgEFQ0CihBF3BdM3HejxgXRqHEJWTWof2MwomJc0LjENShxiRsuIKgYUQJIFEUEAwIj

@@ -35,11 +35,16 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblStar = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblExpectedPrice = new System.Windows.Forms.Label();
+            this.lblExperience = new System.Windows.Forms.Label();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblOccupation = new System.Windows.Forms.Label();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnFavorite = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -48,12 +53,8 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.ptAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblSkills = new System.Windows.Forms.Label();
-            this.lblOccupation = new System.Windows.Forms.Label();
-            this.lblExperience = new System.Windows.Forms.Label();
-            this.lblExpectedPrice = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblStar = new System.Windows.Forms.Label();
             this.lblBio = new System.Windows.Forms.Label();
+            this.lblCCCD = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptAvatar)).BeginInit();
             this.SuspendLayout();
@@ -104,6 +105,50 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(317, 132);
             this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // lblStar
+            // 
+            this.lblStar.AutoSize = true;
+            this.lblStar.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStar.Location = new System.Drawing.Point(139, 104);
+            this.lblStar.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblStar.Name = "lblStar";
+            this.lblStar.Size = new System.Drawing.Size(150, 28);
+            this.lblStar.TabIndex = 24;
+            this.lblStar.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(139, 78);
+            this.lblAddress.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(150, 26);
+            this.lblAddress.TabIndex = 23;
+            this.lblAddress.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
+            // 
+            // lblExpectedPrice
+            // 
+            this.lblExpectedPrice.AutoSize = true;
+            this.lblExpectedPrice.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpectedPrice.Location = new System.Drawing.Point(139, 52);
+            this.lblExpectedPrice.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblExpectedPrice.Name = "lblExpectedPrice";
+            this.lblExpectedPrice.Size = new System.Drawing.Size(150, 26);
+            this.lblExpectedPrice.TabIndex = 22;
+            this.lblExpectedPrice.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
+            // 
+            // lblExperience
+            // 
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExperience.Location = new System.Drawing.Point(139, 26);
+            this.lblExperience.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(150, 26);
+            this.lblExperience.TabIndex = 21;
+            this.lblExperience.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
             // 
             // bunifuLabel2
             // 
@@ -184,6 +229,17 @@
             this.bunifuLabel6.Text = "Average Stars:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblOccupation
+            // 
+            this.lblOccupation.AutoSize = true;
+            this.lblOccupation.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOccupation.Location = new System.Drawing.Point(139, 0);
+            this.lblOccupation.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblOccupation.Name = "lblOccupation";
+            this.lblOccupation.Size = new System.Drawing.Size(150, 26);
+            this.lblOccupation.TabIndex = 20;
+            this.lblOccupation.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
             // 
             // bunifuLabel12
             // 
@@ -288,7 +344,7 @@
             this.btnFavorite.OnIdleState.BorderThickness = 1;
             this.btnFavorite.OnIdleState.FillColor = System.Drawing.Color.Transparent;
             this.btnFavorite.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnFavorite.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btnFavorite.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnFavorite.OnIdleState.IconLeftImage")));
             this.btnFavorite.OnIdleState.IconRightImage = null;
             this.btnFavorite.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
             this.btnFavorite.OnPressedState.BorderRadius = 30;
@@ -394,6 +450,7 @@
             this.btnInformation.TextMarginLeft = 0;
             this.btnInformation.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnInformation.UseDefaultRadiusAndThickness = true;
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
             // 
             // bunifuSeparator2
             // 
@@ -454,61 +511,6 @@
             this.lblSkills.Text = "HElllllllllllloooooooooooooooooooooooooooooooolllllllllllllllllllllllllllllllllll" +
     "looooooooooooo";
             // 
-            // lblOccupation
-            // 
-            this.lblOccupation.AutoSize = true;
-            this.lblOccupation.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOccupation.Location = new System.Drawing.Point(139, 0);
-            this.lblOccupation.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblOccupation.Name = "lblOccupation";
-            this.lblOccupation.Size = new System.Drawing.Size(150, 26);
-            this.lblOccupation.TabIndex = 20;
-            this.lblOccupation.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
-            // 
-            // lblExperience
-            // 
-            this.lblExperience.AutoSize = true;
-            this.lblExperience.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExperience.Location = new System.Drawing.Point(139, 26);
-            this.lblExperience.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblExperience.Name = "lblExperience";
-            this.lblExperience.Size = new System.Drawing.Size(150, 26);
-            this.lblExperience.TabIndex = 21;
-            this.lblExperience.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
-            // 
-            // lblExpectedPrice
-            // 
-            this.lblExpectedPrice.AutoSize = true;
-            this.lblExpectedPrice.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpectedPrice.Location = new System.Drawing.Point(139, 52);
-            this.lblExpectedPrice.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblExpectedPrice.Name = "lblExpectedPrice";
-            this.lblExpectedPrice.Size = new System.Drawing.Size(150, 26);
-            this.lblExpectedPrice.TabIndex = 22;
-            this.lblExpectedPrice.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(139, 78);
-            this.lblAddress.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(150, 26);
-            this.lblAddress.TabIndex = 23;
-            this.lblAddress.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
-            // 
-            // lblStar
-            // 
-            this.lblStar.AutoSize = true;
-            this.lblStar.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStar.Location = new System.Drawing.Point(139, 104);
-            this.lblStar.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblStar.Name = "lblStar";
-            this.lblStar.Size = new System.Drawing.Size(150, 28);
-            this.lblStar.TabIndex = 24;
-            this.lblStar.Text = "HEllllllllllllllllllllllllllllllllllllllllllllllllooooooooooooo";
-            // 
             // lblBio
             // 
             this.lblBio.AutoSize = true;
@@ -521,11 +523,22 @@
             this.lblBio.Text = "HElllllllllllloooooooooooooooooooooooooooooooolllllllllllllllllllllllllllllllllll" +
     "looooooooooooo";
             // 
+            // lblCCCD
+            // 
+            this.lblCCCD.AutoSize = true;
+            this.lblCCCD.Location = new System.Drawing.Point(126, 239);
+            this.lblCCCD.Name = "lblCCCD";
+            this.lblCCCD.Size = new System.Drawing.Size(35, 13);
+            this.lblCCCD.TabIndex = 21;
+            this.lblCCCD.Text = "label1";
+            this.lblCCCD.Visible = false;
+            // 
             // ucBriefPersonalInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.lblCCCD);
             this.Controls.Add(this.lblBio);
             this.Controls.Add(this.lblSkills);
             this.Controls.Add(this.btnFavorite);
@@ -571,5 +584,6 @@
         public System.Windows.Forms.Label lblExpectedPrice;
         public System.Windows.Forms.Label lblExperience;
         public System.Windows.Forms.Label lblOccupation;
+        private System.Windows.Forms.Label lblCCCD;
     }
 }
