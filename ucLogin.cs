@@ -53,7 +53,7 @@ namespace WPFinalPlease
                 //
                 HideUserControl();
                 //Hide uclogin form
-                this.Hide();
+                //this.Hide();
             }
             // If account is null it means the user loggin wrong and show error message.
             else

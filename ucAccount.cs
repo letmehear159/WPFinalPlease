@@ -65,7 +65,9 @@ namespace WPFinalPlease
             string certificate = drdCertificate.SelectedItem.ToString();
             int experience = int.Parse(txtExperience.Text);
             float expectedSalary = float.Parse(txtSalary.Text);
-            Worker worker = new Worker(occupation, experience, expectedSalary, certificate);
+            string skill=txtSkill.Text;
+            string bio=tbBio.Text;
+            Worker worker = new Worker(occupation, experience, expectedSalary, certificate,skill,bio);
             workerDao.changeFromUserToWorker(worker, account.getCCCD());
         }
 

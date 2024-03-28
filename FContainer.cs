@@ -27,6 +27,7 @@ namespace WPFinalPlease
             //This parameter is used to take value from user (Name, Age, CCCC...)
             ucMainMenu ucMainMenu = new ucMainMenu(ucLogin1.GetAccount());
             ucMainMenu.Dock = DockStyle.Fill;
+            ucLogin1.Hide();
             this.Controls.Add(ucMainMenu);
             //When this event executes, make it run other event from passed Function
             ucMainMenu.turnOff += turnOffForm;
@@ -55,11 +56,13 @@ namespace WPFinalPlease
             ucLogin ucLogin1 = new ucLogin();
             //Fill the Uc in the container form
             ucLogin1.Dock = DockStyle.Fill;
+            this.ucLogin1 = ucLogin1;
             //Add or show it 
-            this.Controls.Add(ucLogin1);
+            this.Controls.Add(this.ucLogin1);
             ucLogin1.LoginHidden += UserControl_Hidden;
             //Take this data to attribute above.
-            this.ucLogin1= ucLogin1;
+            //ucLogin1.Hide();
+            
         }
 
     }

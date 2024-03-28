@@ -13,13 +13,13 @@ namespace WPFinalPlease
         private int experiencedYear;
         private double expectedPrice;
         private string certificate;
-        private float starRate;
+        private double starRate;
         private int reviewAmount;
         private string skills;
         private string bio;
 
         public Worker(string name, string cccd, string address, string gender, string phone, string email, DateTime birth,
-            string occupation, int experiencedYear, double expectedPrice, string certificate, float starRate,
+            string occupation, int experiencedYear, double expectedPrice, string certificate, double starRate,
             int reviewAmount, string skills, string bio
             ) : base(name, cccd, address, gender, phone, email, birth)
         {
@@ -33,13 +33,15 @@ namespace WPFinalPlease
             this.reviewAmount = reviewAmount;
 
         }
-        public Worker(string occupation, int experiencedYear, double expectedPrice, string certificate)
+        public Worker(string occupation, int experiencedYear, double expectedPrice, string certificate,string skill,string bio)
        : base()
         {
             this.occupation = occupation;
             this.experiencedYear = experiencedYear;
             this.expectedPrice = expectedPrice;
             this.certificate = certificate;
+            this.skills= skill;
+            this.bio= bio;
             // Các thuộc tính khác sẽ tự động được gán giá trị mặc định (null) vì chúng không được gán trong constructor này
         }
        
@@ -65,7 +67,7 @@ namespace WPFinalPlease
             return certificate;
         }
 
-        public float GetStarRate()
+        public double GetStarRate()
         {
             return starRate;
         }
