@@ -18,7 +18,7 @@ namespace WPFinalPlease
  SqlConnection(Properties.Settings.Default.connStr);
         DBconnection dBconnection = new DBconnection();
         WorkerDao workerDao = new WorkerDao();
-       public ucMainMenu ucMainMenu;
+        public ucMainMenu ucMainMenu;
         ucWorkerDetail ucWorkerDetail;
         public ucWorkerList()
         {
@@ -30,13 +30,10 @@ namespace WPFinalPlease
         {
             ucBriefPersonalInfor userControlB = sender as ucBriefPersonalInfor;
             string cccd = e.Data; // Dữ liệu được truyền từ UserControl B
-
             // Bây giờ bạn có thể làm gì đó với dữ liệu từ UserControl B
-            MessageBox.Show(cccd);
-            ucMainMenu.tabMainMenu.SelectedIndex = 5;
-        Worker worker=    workerDao.getFullInformationFromCCCD(cccd);
-
+            Worker worker = workerDao.getFullInformationFromCCCD(cccd);
             Utility.fillInWorkerDetail(worker, ucWorkerDetail);
+            ucMainMenu.tabMainMenu.SelectedIndex = 5;
         }
 
         private void ucWorkerList_Load(object sender, EventArgs e)
@@ -44,6 +41,7 @@ namespace WPFinalPlease
             ucWorkerDetail ucWorker = new ucWorkerDetail();
             ucMainMenu.tpWorkerDetail.Controls.Add(ucWorker);
             this.ucWorkerDetail = ucWorker;
+            this.ucWorkerDetail.ucMainMenu = ucMainMenu;
             DataTable workerList = workerDao.load();
             foreach (DataRow row in workerList.Rows)
             {
@@ -52,12 +50,12 @@ namespace WPFinalPlease
                 ucBriefPersonalInfor.Margin = new Padding(15);
                 flowPanel.Controls.Add(ucBriefPersonalInfor);
             }
-            foreach(ucBriefPersonalInfor uc in flowPanel.Controls)
+            foreach (ucBriefPersonalInfor uc in flowPanel.Controls)
             {
                 uc.ButtonActivated += UserControlB_ButtonActivated;
             }
 
-            
+
         }
 
         

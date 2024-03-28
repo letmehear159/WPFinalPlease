@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace WPFinalPlease
 {
     internal class Utility
     {
+         static WorkerDao  workerDao=new WorkerDao();
         public static bool checkValidPersonal(Account account)
         {
             if (string.IsNullOrEmpty((account.getCCCD()))){
@@ -140,6 +142,29 @@ namespace WPFinalPlease
         {
             ucWorker.lblName.Text=worker.GetName();
             ucWorker.lblAddress.Text=worker.GetAddress();
+            ucWorker.lblAge.Text = (DateTime.Now.Year - worker.GetBirth().Year).ToString();
+            ucWorker.lblCCCD.Text=worker.GetCCCD();
+            ucWorker.lblCertificate.Text=worker.GetCertificate();
+            ucWorker.lblEmail.Text=worker.GetEmail();
+            ucWorker.lblExperience.Text=worker.GetExperiencedYear().ToString();
+            ucWorker.lblGender.Text=worker.GetGender();
+            ucWorker.lblOccupation.Text=worker.GetOccupation();
+            ucWorker.lblPhone.Text=worker.GetPhone();
+            ucWorker.lblReview.Text = worker.GetReviewAmount().ToString();
+            ucWorker.lblSkills.Text=worker.GetSkills();
+            ucWorker.lblStar.Text = worker.GetStarRate().ToString() + "/5";
+            ucWorker.lblExpectedPrice.Text=worker.GetExpectedPrice().ToString();  
+            ucWorker.lblIntroduce.Text=worker.GetBio().ToString();
+            DataTable workHistoryList = workerDao.getWorkingHistory(worker.GetCCCD());
+            foreach (DataRow row in workHistoryList.Rows)
+            {
+                ucWorkHistory uCWorkHistory = new ucWorkHistory();
+                uCWorkHistory.receiveInfo(row);
+                uCWorkHistory.Margin = new Padding(3);
+                ucWorker.flowPanelWorkHistory.Controls.Add(uCWorkHistory);
+            }
+
+
         }
         public static bool ValidateBirth(Person p)
         {

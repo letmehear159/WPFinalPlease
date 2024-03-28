@@ -17,19 +17,13 @@ namespace WPFinalPlease
             InitializeComponent();
         }
 
-        private void ucWorkHistory_Load(object sender, EventArgs e)
+        public void receiveInfo(DataRow row)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            lblComment.Text = row["Comment"].ToString();
+            lblObjective.Text = row["Objective"].ToString();
+            lblPaid.Text = row["Paid"].ToString();
+            lblProgress.Text = row["Progress"].ToString();
+            lblTimeFinish.Text = row["Time_Finish"].ToString();
         }
     }
 }
